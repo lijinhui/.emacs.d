@@ -1,0 +1,18 @@
+
+--此行及以下内容将会被忽略--
+
+A    init_ack.el
+A    init_tree.el
+AM   cedet
+AM   init_company.el
+AM   init_highlight-symbol.el
+A    init_latex.el
+A    tree
+A    init_auto-complete.el
+AM   init_color-theme.el
+A    init.el
+AM   init_basic.el
+AM   init_session.el
+A    init_cedet.el
+AM   init_org.el
+A    auto-save-list

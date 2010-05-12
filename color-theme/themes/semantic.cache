@@ -1,0 +1,16 @@
+;; Object themes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "themes/"
+  :tables (list 
+   (semanticdb-table "my-color-theme-test.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("color-theme" include nil nil [22 44]) ("color-theme-example" function (:user-visible-flag t) nil [47 318]))
+    :file "my-color-theme-test.el"
+    :pointmax 319
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )

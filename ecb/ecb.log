@@ -1,0 +1,2655 @@
+This is TeX, Version 3.141592 (Web2C 7.5.6) (format=tex 2008.12.28)  28 DEC 2008 16:00
+**ecb.texi
+(./ecb.texi (/usr/share/texmf/tex/texinfo/texinfo.tex
+Loading texinfo [version 2007-09-03.05]:
+\bindingoffset=\dimen16
+\normaloffset=\dimen17
+\pagewidth=\dimen18
+\pageheight=\dimen19
+\outerhsize=\dimen20
+\outervsize=\dimen21
+\cornerlong=\dimen22
+\cornerthick=\dimen23
+\topandbottommargin=\dimen24
+\headlinebox=\box16
+\footlinebox=\box17
+\margin=\insert252
+\EMsimple=\toks12
+\groupbox=\box18
+\groupinvalidhelp=\toks13
+\mil=\dimen25
+\exdentamount=\skip18
+\inmarginspacing=\skip19
+ pdf,
+\tempnum=\count26
+\lnkcount=\count27
+\filename=\toks14
+\filenamelength=\count28
+\pgn=\count29
+\toksA=\toks15
+\toksB=\toks16
+\toksC=\toks17
+\toksD=\toks18
+\boxA=\box19
+\countA=\count30
+\nopdfimagehelp=\toks19
+ fonts,
+\sffam=\fam8
+\textleading=\dimen26
+\fontdepth=\count31
+ page headings,
+\titlepagetopglue=\skip20
+\titlepagebottomglue=\skip21
+\evenheadline=\toks20
+\oddheadline=\toks21
+\evenfootline=\toks22
+\oddfootline=\toks23
+ tables,
+\tableindent=\dimen27
+\itemindent=\dimen28
+\itemmargin=\dimen29
+\itemmax=\dimen30
+\itemno=\count32
+\multitableparskip=\skip22
+\multitableparindent=\skip23
+\multitablecolspace=\dimen31
+\multitablelinespace=\skip24
+\colcount=\count33
+\everytab=\toks24
+
+conditionals,
+\doignorecount=\count34
+ indexing,
+\whatsitskip=\skip25
+\whatsitpenalty=\count35
+\secondaryindent=\skip26
+\partialpage=\box20
+\doublecolumnhsize=\dimen32
+ sectioning,
+\unnumberedno=\count36
+\chapno=\count37
+\secno=\count38
+\subsecno=\count39
+\subsubsecno=\count40
+\appendixno=\count41
+\absseclevel=\count42
+\secbase=\count43
+\chapheadingskip=\skip27
+\secheadingskip=\skip28
+\subsecheadingskip=\skip29
+ toc,
+\tocfile=\write0
+\contentsrightmargin=\skip30
+\savepageno=\count44
+\lastnegativepageno=\count45
+\tocindent=\dimen33
+ environments,
+\errorbox=\box21
+\lispnarrowing=\skip31
+\envskipamount=\skip32
+\circthick=\dimen34
+\cartouter=\dimen35
+\cartinner=\dimen36
+\normbskip=\skip33
+\normpskip=\skip34
+\normlskip=\skip35
+\lskip=\skip36
+\rskip=\skip37
+\tabw=\dimen37
+ defuns,
+\defbodyindent=\skip38
+\defargsindent=\skip39
+\deflastargmargin=\skip40
+\defunpenalty=\count46
+\parencount=\count47
+\brackcount=\count48
+ macros,
+\macscribble=\write1
+\paramno=\count49
+\macname=\toks25
+
+cross references,
+\auxfile=\write2
+\savesfregister=\count50
+ insertions,
+\footnoteno=\count51
+\SAVEfootins=\box22
+\SAVEmargin=\box23
+
+(/usr/share/texmf-texlive/tex/generic/epsf/epsf.tex
+This is `epsf.tex' v2.7.3 <23 July 2005>
+\epsffilein=\read0
+\epsfframemargin=\dimen38
+\epsfframethickness=\dimen39
+\epsfrsize=\dimen40
+\epsftmp=\dimen41
+\epsftsize=\dimen42
+\epsfxsize=\dimen43
+\epsfysize=\dimen44
+\pspoints=\dimen45
+)
+\noepsfhelp=\toks26
+ localization,
+\nolanghelp=\toks27
+\countUTFx=\count52
+\countUTFy=\count53
+\countUTFz=\count54
+ formatting,
+\defaultparindent=\dimen46
+ and turning on texinfo input format.)
+\openout2 = `ecb.aux'.
+
+@cpindfile=@write3
+@fnindfile=@write4
+@vrindfile=@write5
+@tpindfile=@write6
+@kyindfile=@write7
+@pgindfile=@write8
+\openout1 = `ecb.tmp'.
+
+ (./ecb.tmp)
+[1
+\openout3 = `ecb.cp'.
+
+\openout4 = `ecb.fn'.
+
+\openout5 = `ecb.vr'.
+
+\openout6 = `ecb.tp'.
+
+\openout7 = `ecb.ky'.
+
+\openout8 = `ecb.pg'.
+
+] Cross reference values unknown; you must run TeX again. Chapter 1 [1]
+\openout0 = `ecb.toc'.
+
+
+[2] [3] [4] [5] [6] Chapter 2 [7] Chapter 3 [8] [9] Chapter 4 [10]
+Missing character: There is no ^^b4 in font cmtt10!
+ [11]
+[12] [13] [14] [15] [16] [17] [18] Chapter 5 [19] Chapter 6 [20] [21]
+Underfull \hbox (badness 4429) in paragraph at lines 1809--1815
+[]@textrm With the op-tions @texttt ecb-directories-menu-user-extension[]@textr
+m , @texttt ecb-sources-menu-
+
+@hbox(7.60416+2.12917)x433.62, glue set 3.541
+.@hbox(0.0+0.0)x15.0
+.@textrm W
+.@textrm i
+.@textrm t
+.@textrm h
+.etc.
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 1809--1815
+@texttt user-extension[]@textrm , @texttt ecb-methods-menu-user-extension[] @te
+xtrm and @texttt ecb-history-menu-user-
+
+@hbox(7.60416+2.43333)x433.62, glue set 2.83661
+.@texttt u
+.@texttt s
+.@texttt e
+.@texttt r
+.@texttt -
+.etc.
+
+
+Underfull \hbox (badness 4608) in paragraph at lines 1816--1822
+@texttt menu-user-extension-function[]@textrm , @texttt ecb-methods-menu-user-e
+xtension-function[] @textrm and
+
+@hbox(7.60416+2.12917)x433.62, glue set 3.58623
+.@texttt m
+.@texttt e
+.@texttt n
+.@texttt u
+.@texttt -
+.etc.
+
+[22] [23]
+Missing character: There is no ^^b4 in font cmr10!
+ [24] [25]
+Missing character: There is no ^^b4 in font cmr10!
+ [26]
+Missing character: There is no ^^b4 in font cmr10!
+ [27] [28]
+Underfull \hbox (badness 2073) in paragraph at lines 2359--2364
+ []@textrm If the op-tion @texttt ecb-scroll-other-window-scrolls-compile-windo
+w[] @textrm is not nil
+
+@hbox(7.60416+2.43333)x433.62, glue set 2.74919
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@textrm I
+.@textrm f
+.@glue 3.65 plus 1.825 minus 1.21666
+.etc.
+
+
+Underfull \hbox (badness 5189) in paragraph at lines 2359--2364
+ @textrm (maybe set by @texttt ecb-toggle-scroll-other-window-scrolls-compile[]
+@textrm ) and a
+
+@hbox(8.2125+2.73749)x433.62, glue set 3.73236
+.@glue(@leftskip) 28.90755
+.@textrm (
+.@textrm m
+.@textrm a
+.@kern-0.30418
+.etc.
+
+[29] [30]
+Underfull \hbox (badness 2277) in paragraph at lines 2493--2501
+@texttt display-function[]@textrm , @texttt special-display-buffer-names[] @tex
+trm and @texttt special-display-regexps[]
+
+@hbox(7.60416+2.43333)x433.62, glue set 2.83661
+.@texttt d
+.@texttt i
+.@texttt s
+.@texttt p
+.@texttt l
+.etc.
+
+[31] [32]
+Overfull \hbox (13.1356pt too wide) in paragraph at lines 2678--2678
+ []             @texttt (ecb-next-listelem ecb-win-list (selected-window) nth-w
+in))[] |
+
+@hbox(7.60416+0.91246)x433.62
+.@glue(@leftskip) 32.85008
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (18.8843pt too wide) in paragraph at lines 2682--2682
+ []                          @texttt (window-live-p ecb-last-edit-window-with-p
+oint)[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 32.85008
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (24.63298pt too wide) in paragraph at lines 2692--2692
+ []                                                 @texttt (= (length edit-win
+-list)[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 32.85008
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+[33] [34]
+Underfull \hbox (badness 2418) in paragraph at lines 2788--2794
+[]@textrm Which node-types are ex-panded (rsp. col-lapsed) by this com-mand de-
+pends
+
+@hbox(8.2125+2.73749)x433.62, glue set 2.89522
+.@hbox(0.0+0.0)x15.0
+.@textrm W
+.@textrm h
+.@textrm i
+.@textrm c
+.etc.
+
+
+Underfull \hbox (badness 4819) in paragraph at lines 2788--2794
+@textrm for semantic-sources on the op-tions @texttt ecb-methods-nodes-expand-s
+pec[] @textrm and @texttt ecb-
+
+@hbox(7.60416+2.43333)x433.62, glue set 3.64063
+.@textrm f
+.@textrm o
+.@textrm r
+.@glue 3.65 plus 1.825 minus 1.21666
+.@textrm s
+.etc.
+
+[35] [36] [37] [38] [39]
+Underfull \hbox (badness 3690) in paragraph at lines 3116--3126
+[]@textrm The com-mands @texttt ecb-methods-filter[]@textrm , @texttt ecb-metho
+ds-filter-regexp[]@textrm , @texttt ecb-methods-
+
+@hbox(7.60416+2.43333)x433.62, glue set 3.33005
+.@hbox(0.0+0.0)x15.0
+.@kern -15.0
+.@textrm T
+.@textrm h
+.@textrm e
+.etc.
+
+
+Underfull \hbox (badness 4242) in paragraph at lines 3116--3126
+@texttt ecb-methods-filter-delete-last[]@textrm , @texttt ecb-methods-filter-no
+filter[] @textrm al-lows to fil-ter
+
+@hbox(7.60416+2.12917)x433.62, glue set 3.49066
+.@texttt e
+.@texttt c
+.@texttt b
+.@texttt -
+.@discretionary
+.etc.
+
+[40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54]
+[55] [56] [57] [58] [59]
+Underfull \hbox (badness 10000) in paragraph at lines 4286--4298
+@texttt ecb-tree-do-not-leave-window-after-select[] @textrm (see also the tree-
+buffer-command
+
+@hbox(8.2125+2.73749)x433.62, glue set 4.3795
+.@texttt e
+.@texttt c
+.@texttt b
+.@texttt -
+.@discretionary
+.etc.
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 4286--4298
+@texttt ecb-toggle-do-not-leave-window-after-select[] @textrm which is bound to
+ C-T[] in each
+
+@hbox(7.60416+2.43333)x433.62, glue set 2.8502
+.@texttt e
+.@texttt c
+.@texttt b
+.@texttt -
+.@discretionary
+.etc.
+
+[60] [61] [62]
+Underfull \hbox (badness 5862) in paragraph at lines 4525--4532
+ []@textrm Select a layout-name from all cur-rent avail-able lay-outs (TAB-comp
+letion
+
+@hbox(8.2125+2.73749)x433.62, glue set 3.88669
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@textrm S
+.@textrm e
+.@textrm l
+.etc.
+
+[63] [64] [65] [66] [67] [68] [69] [70]
+Underfull \hbox (badness 2012) in paragraph at lines 5128--5134
+ @textrm ECB win-dows will be set to their stored val-ues when @texttt ecb-redr
+aw-layout[]
+
+@hbox(7.60416+2.43333)x433.62, glue set 2.72134
+.@glue(@leftskip) 28.90755
+.@textrm E
+.@textrm C
+.@textrm B
+.@glue 3.65 plus 1.82317 minus 1.21786
+.etc.
+
+[71] [72] Chapter 7 [73] [74]
+Overfull \hbox (18.8843pt too wide) in paragraph at lines 5375--5375
+ []  @texttt "Return the value of a customizable option OPTION with TYPE, where
+ TYPE[] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 32.85008
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (47.62773pt too wide) in paragraph at lines 5386--5386
+ []@texttt If OVERRIDE is a function or lambda-form then it is called with two 
+arguments:[] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 32.85008
+.@hbox(0.0+0.0)x0.0
+.@texttt I
+.@texttt f
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (47.62773pt too wide) in paragraph at lines 5390--5390
+ []@texttt returns not nil then `customize-save-variable' is called for OPTION 
+with VALUE[] |
+
+@hbox(6.69167+0.0)x433.62
+.@glue(@leftskip) 32.85008
+.@hbox(0.0+0.0)x0.0
+.@texttt r
+.@texttt e
+.@texttt t
+.etc.
+
+
+Overfull \hbox (18.8843pt too wide) in paragraph at lines 5396--5396
+ []                         @texttt (customize-option-get-value option 'saved-v
+alue)[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 32.85008
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (47.62773pt too wide) in paragraph at lines 5399--5399
+ []         @texttt (message "Overriding saved value for option %s with %s" opt
+ion value)[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 32.85008
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+[75] [76] [77] [78] [79] [80] [81]
+Missing character: There is no ^^ff in font cmr10!
+ [82] [83] [84] [85] [86] [87] [88] [89]
+[90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101] [102] [103]
+[104] [105]
+Underfull \hbox (badness 10000) in paragraph at lines 7549--7556
+ @texttt ecb--semantic-format-tag-uml-concise-prototype[]@textrm , @texttt ecb-
+-semantic-format-
+
+@hbox(6.69167+2.43333)x433.62, glue set 5.63673
+.@glue(@leftskip) 28.90755
+.@texttt e
+.@texttt c
+.@texttt b
+.@texttt -
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7549--7556
+ @texttt tag-uml-prototype[]@textrm , or @texttt ecb--semantic-format-tag-uml-a
+bbreviate[] @textrm the
+
+@hbox(7.60416+2.43333)x433.62, glue set 7.38838
+.@glue(@leftskip) 28.90755
+.@texttt t
+.@texttt a
+.@texttt g
+.@texttt -
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7592--7599
+ @texttt ecb-tag-visit-highlight-tag-header[] ecb-tag-visit-smart-tag-start[]
+
+@hbox(6.69167+2.43333)x433.62, glue set 21.31244
+.@glue(@leftskip) 28.90755
+.@texttt e
+.@texttt c
+.@texttt b
+.@texttt -
+.etc.
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 7592--7599
+ @texttt ecb-tag-visit-recenter[] ecb-tag-visit-recenter-top[] ecb-tag-visit-go
+to-
+
+@hbox(6.69167+2.43333)x433.62, glue set 3.35628
+.@glue(@leftskip) 28.90755
+.@texttt e
+.@texttt c
+.@texttt b
+.@texttt -
+.etc.
+
+[106]
+Underfull \hbox (badness 2073) in paragraph at lines 7645--7659
+ @textrm faces for this (@texttt ecb-type-tag-class-face[]@textrm , @texttt ecb
+-type-tag-interface-
+
+@hbox(8.2125+2.73749)x433.62, glue set 2.74939
+.@glue(@leftskip) 72.26997
+.@textrm f
+.@textrm a
+.@textrm c
+.@textrm e
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7645--7659
+ @texttt face[]@textrm , @texttt ecb-type-tag-struct-face[]@textrm , @texttt ec
+b-type-tag-typedef-face[]@textrm ,
+
+@hbox(6.69167+2.43333)x433.62, glue set 8.82079
+.@glue(@leftskip) 72.26997
+.@texttt f
+.@texttt a
+.@texttt c
+.@texttt e
+.etc.
+
+
+Underfull \hbox (badness 3428) in paragraph at lines 7645--7659
+ @texttt ecb-type-tag-union-face[]@textrm , @texttt ecb-type-tag-enum-face[] @t
+extrm and @texttt ecb-type-
+
+@hbox(7.60416+2.43333)x433.62, glue set 3.25186
+.@glue(@leftskip) 72.26997
+.@texttt e
+.@texttt c
+.@texttt b
+.@texttt -
+.etc.
+
+[107] [108] [109] [110] [111] [112] [113] [114] [115] [116] [117]
+Underfull \hbox (badness 2020) in paragraph at lines 8407--8415
+ []@textrm If the minibuffer-window is se-lected then ECB al-ways chooses the w
+in-dow
+
+@hbox(7.60416+2.12917)x433.62, glue set 2.72462
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@textrm I
+.@textrm f
+.@glue 3.65 plus 1.825 minus 1.21666
+.etc.
+
+[118] [119] [120]
+Underfull \hbox (badness 2961) in paragraph at lines 8628--8630
+ []@textrm See also the op-tions @texttt ecb-compilation-major-modes[] @textrm 
+and @texttt ecb-compilation-
+
+@hbox(7.60416+2.43333)x433.62, glue set 3.09639
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@textrm S
+.@textrm e
+.@textrm e
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8651--8654
+ []@textrm In com-bi-na-tion with the val-ues of @texttt ecb-compilation-buffer
+-names[] @textrm and
+
+@hbox(7.60416+2.43333)x433.62, glue set 4.50397
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@textrm I
+.@textrm n
+.@glue 3.65 plus 1.825 minus 1.21666
+.etc.
+
+[121]
+Underfull \hbox (badness 10000) in paragraph at lines 8683--8686
+ []@textrm See also the op-tions @texttt ecb-compile-window-temporally-enlarge[
+] @textrm and
+
+@hbox(7.60416+2.43333)x433.62, glue set 7.89563
+.@glue(@leftskip) 28.90755
+.@hbox(0.0+0.0)x0.0
+.@textrm S
+.@textrm e
+.@textrm e
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8683--8686
+ @texttt ecb-enlarged-compilation-window-max-height[] @textrm and also the com-
+mand
+
+@hbox(7.60416+2.43333)x433.62, glue set 7.02374
+.@glue(@leftskip) 28.90755
+.@texttt e
+.@texttt c
+.@texttt b
+.@texttt -
+.etc.
+
+[122]
+Underfull \hbox (badness 6792) in paragraph at lines 8810--8819
+ @textrm If @texttt compilation-mode[] @textrm then @texttt compilation-window-
+height[] @textrm is used oth-er-wise
+
+@hbox(7.60416+2.43333)x433.62, glue set 4.08249
+.@glue(@leftskip) 28.90755
+.@textrm I
+.@textrm f
+.@glue 3.65 plus 1.825 minus 1.21666
+.@texttt c
+.etc.
+
+[123] [124] [125]
+Underfull \hbox (badness 4048) in paragraph at lines 8988--8994
+ []@textrm With XEmacs there is no inheritance-feature but the op-tions @texttt
+ ecb-
+
+@hbox(7.60416+2.12917)x433.62, glue set 3.43555
+.@glue(@leftskip) 57.81621
+.@hbox(0.0+0.0)x0.0
+.@textrm W
+.@textrm i
+.@textrm t
+.etc.
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 8988--8994
+ @texttt directories-general-face[]@textrm , @texttt ecb-sources-general-face[]
+@textrm , @texttt ecb-methods-
+
+@hbox(6.69167+2.43333)x433.62, glue set 3.83546
+.@glue(@leftskip) 57.81621
+.@texttt d
+.@texttt i
+.@texttt r
+.@texttt e
+.etc.
+
+Missing character: There is no ^^b4 in font cmr10!
+Missing character: There is no ^^b4 in font cmr10!
+Missing character: There is no ^^b4 in font cmr10!
+[126]
+Missing character: There is no ^^b4 in font cmr10!
+ [127] [128] [129] [130] [131] [132] [133] [134] [135] Chapter 8 [136]
+Missing character: There is no ^^b4 in font cmr10!
+
+Chapter 9 [137] [138] [139] [140] Chapter 10 [141]
+Missing character: There is no ^^b4 in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 10039--10045
+ @texttt general-face[]@textrm , @texttt ecb-sources-general-face[]@textrm , @t
+exttt ecb-methods-general-face[] @textrm and
+
+@hbox(7.60416+2.43333)x433.62, glue set 5.06343
+.@glue(@leftskip) 21.68121
+.@texttt g
+.@texttt e
+.@texttt n
+.@texttt e
+.etc.
+
+[142] [143] [144]
+Underfull \hbox (badness 3989) in paragraph at lines 10262--10269
+[]@textrm During speed-bar is run-ning within ECB (i.e. @texttt ecb-use-speedba
+r-instead-
+
+@hbox(8.2125+2.73749)x433.62, glue set 3.4187
+.@hbox(0.0+0.0)x15.0
+.@textrm D
+.@textrm u
+.@textrm r
+.@textrm i
+.etc.
+
+[145]
+Underfull \hbox (badness 4266) in paragraph at lines 10372--10378
+@texttt ecb-stealthy-tasks-delay[] @textrm for ad-di-tional ex-pla-na-tions) be
+-cause these tasks are
+
+@hbox(8.2125+2.73749)x433.62, glue set 3.49533
+.@texttt e
+.@texttt c
+.@texttt b
+.@texttt -
+.@discretionary
+.etc.
+
+[146] [147] [148] [149] [150] [151]
+Overfull \hbox (63.56026pt too wide) in paragraph at lines 10749--10749
+ []  @texttt "Stored the filename of the most recent checked-in file. Is only s
+et by the[] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 54.5313
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (52.06288pt too wide) in paragraph at lines 10750--10750
+ []@texttt after-advice of `vc-checkin' and `ecb-vc-checkin-hook' \(resets it t
+o nil).[] |
+
+@hbox(7.60416+0.91246)x433.62
+.@glue(@leftskip) 54.5313
+.@hbox(0.0+0.0)x0.0
+.@texttt a
+.@texttt f
+.@texttt t
+.etc.
+
+
+Overfull \hbox (57.81157pt too wide) in paragraph at lines 10758--10758
+ []  @texttt "Simply stores the filename of the checked-in file in `ecb-checked
+in-file'[] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 54.5313
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (34.81682pt too wide) in paragraph at lines 10763--10763
+ []  @texttt "Ensures that the ECB-cache is reset and the entry for the most re
+cent[] |
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 54.5313
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (69.30894pt too wide) in paragraph at lines 10764--10764
+ []@texttt checkedin file is cleared. Uses `ecb-checkedin-file' as last checked
+-in file."[] |
+
+@hbox(6.69167+0.0)x433.62
+.@glue(@leftskip) 54.5313
+.@hbox(0.0+0.0)x0.0
+.@texttt c
+.@texttt h
+.@texttt e
+.etc.
+
+[152] [153] [154]
+Overfull \hbox (17.57076pt too wide) in paragraph at lines 10962--10962
+ []                          @texttt (ecb-compilation-buffer-p compwin-buffer))
+)[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 54.5313
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+[155]
+Underfull \hbox (badness 10000) in paragraph at lines 11031--11039
+ @textrm and @texttt speedbar-dynamic-tags-function-list[] @textrm and - es-pe-
+cially for etags -
+
+@hbox(7.60416+2.43333)x433.62, glue set 4.65063
+.@glue(@leftskip) 21.68121
+.@textrm a
+.@textrm n
+.@textrm d
+.@glue 3.65 plus 1.825 minus 1.21666
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11031--11039
+ @texttt speedbar-fetch-etags-parse-list[]@textrm , @texttt speedbar-fetch-etag
+s-arguments[] @textrm and
+
+@hbox(7.60416+2.43333)x433.62, glue set 8.1061
+.@glue(@leftskip) 21.68121
+.@texttt s
+.@texttt p
+.@texttt e
+.@texttt e
+.etc.
+
+
+Underfull \hbox (badness 6268) in paragraph at lines 11082--11086
+ []@textrm Only if @texttt ecb-auto-save-before-etags-methods-rebuild[] @textrm
+ is switched on the
+
+@hbox(7.60416+2.43333)x433.62, glue set 3.97577
+.@glue(@leftskip) 21.68121
+.@hbox(0.0+0.0)x0.0
+.@textrm O
+.@textrm n
+.@textrm l
+.etc.
+
+[156]
+Underfull \hbox (badness 10000) in paragraph at lines 11110--11115
+[]@texttt speedbar-tag-hierarchy-method[]@textrm , @texttt speedbar-tag-group-n
+ame-minimum-length[]@textrm ,
+
+@hbox(6.69167+2.43333)x433.62, glue set 10.39989
+.@hbox(0.0+0.0)x15.0
+.@texttt s
+.@texttt p
+.@texttt e
+.@texttt e
+.etc.
+
+
+Underfull \hbox (badness 6559) in paragraph at lines 11110--11115
+@texttt speedbar-tag-split-minimum-length[] @textrm and @texttt speedbar-tag-re
+group-maximum-length[]@textrm .
+
+@hbox(7.60416+2.43333)x433.62, glue set 4.0345
+.@texttt s
+.@texttt p
+.@texttt e
+.@texttt e
+.@texttt d
+.etc.
+
+[157]
+Underfull \hbox (badness 2435) in paragraph at lines 11179--11187
+ []@textrm winring.el: Writ-ten by Barry A. War-saw @texttt bwarsaw@python.org[
+]@textrm , avail-able at
+
+@hbox(7.60416+2.43333)x433.62, glue set 2.8995
+.@glue(@leftskip) 21.68121
+.@hbox(4.86667+0.0)x0.0, glue set - 12.70244fil
+..@glue 0.0 plus 1.0fil minus 1.0fil
+..@mathon
+..@textsy ^^O
+..@mathoff
+..@kern 7.22743
+.@textrm w
+.@textrm i
+.@textrm n
+.etc.
+
+
+Underfull \hbox (badness 4739) in paragraph at lines 11188--11196
+ []@textrm escreen.el: Writ-ten by Noah Fried-man @texttt friedman@splode.com[]
+@textrm , avail-able at
+
+@hbox(7.60416+2.43333)x433.62, glue set 3.62067
+.@glue(@leftskip) 21.68121
+.@hbox(4.86667+0.0)x0.0, glue set - 12.70244fil
+..@glue 0.0 plus 1.0fil minus 1.0fil
+..@mathon
+..@textsy ^^O
+..@mathoff
+..@kern 7.22743
+.@textrm e
+.@textrm s
+.@textrm c
+.etc.
+
+[158] [159]
+Overfull \hbox (47.62773pt too wide) in paragraph at lines 11367--11367
+ [] @texttt |  +ClassWithExternals (+i:int, +b:class boolean, +c:char):ClassWit
+hExternals[] |
+
+@hbox(7.60416+1.52081)x433.62
+.@glue(@leftskip) 32.85008
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@texttt |
+.etc.
+
+[160] Chapter 11 [161] [162]
+Missing character: There is no ^^b4 in font cmtt10!
+ [163] [164]
+Overfull \hbox (19.21362pt too wide) in paragraph at lines 11674--11674
+ []      @texttt (list (if control-pressed 2 1) shift-pressed meta-pressed[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (30.711pt too wide) in paragraph at lines 11676--11676
+ []    @texttt (if (and (not (eq mouse-button 1)) (not (eq mouse-button 2)))[] 
+|
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (36.45969pt too wide) in paragraph at lines 11682--11682
+ []           @texttt (list mouse-button shift-pressed meta-pressed 'mouse)))[]
+ |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (47.95706pt too wide) in paragraph at lines 11686--11686
+ []           @texttt (list (if control-pressed 2 1) shift-pressed meta-pressed
+[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (47.95706pt too wide) in paragraph at lines 11691--11691
+ []           @texttt (list (if control-pressed 2 1) shift-pressed meta-pressed
+[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+[165]
+Overfull \hbox (30.711pt too wide) in paragraph at lines 11701--11701
+ []                    @texttt :is-click-valid-fn 'ecb-interpret-mouse-click[] 
+|
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (30.711pt too wide) in paragraph at lines 11733--11733
+ []  @texttt (let* ((ecb-button-list (ecb-interpret-mouse-click mouse-button[] 
+|
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (30.711pt too wide) in paragraph at lines 11736--11736
+ []                                                     @texttt meta-pressed[] 
+|
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (19.21362pt too wide) in paragraph at lines 11741--11741
+ []         @texttt (keyboard-p (equal (nth 3 ecb-button-list) 'keyboard))[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (47.95706pt too wide) in paragraph at lines 11742--11742
+ []         @texttt (maximized-p (ecb-buffer-is-maximized-p tree-buffer-name)))
+[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (65.20313pt too wide) in paragraph at lines 11745--11745
+ []      @texttt (cond ((ecb-string= tree-buffer-name ecb-directories-buffer-na
+me)[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+[166]
+Overfull \hbox (88.19788pt too wide) in paragraph at lines 11768--11768
+ []                    @texttt :node-selected-fn 'ecb-tree-buffer-node-select-c
+allback[] |
+
+@hbox(6.69167+0.0)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+[167]
+Overfull \hbox (47.95706pt too wide) in paragraph at lines 11842--11842
+ []@texttt (defun ecb-mouse-over-analyse-node (node &optional window no-message
+[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@texttt (
+.@texttt d
+.@texttt e
+.etc.
+
+[168]
+Overfull \hbox (24.96231pt too wide) in paragraph at lines 11878--11878
+ []  @texttt "Return not nil when LEFT and RIGHT are identical node-datas."[] |
+
+
+@hbox(6.69167+0.0)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+[169]
+Overfull \hbox (65.20313pt too wide) in paragraph at lines 11949--11949
+ []         @texttt (tag-p (not (equal (nth 1 data) ecb-analyse-nodedata-no-tag
+)))[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (42.20837pt too wide) in paragraph at lines 11951--11951
+ []                                @texttt ecb-analyse-nodedata-tag-with-pos))[
+] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (76.7005pt too wide) in paragraph at lines 11953--11953
+ []    @texttt (delq nil (list (if (equal nodetype ecb-analyse-nodetype-complet
+ions)[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (53.70575pt too wide) in paragraph at lines 11956--11956
+ []                        @texttt '(ecb-analyse-show-tag-info "Show tag info")
+)[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (53.70575pt too wide) in paragraph at lines 11958--11958
+ []                        @texttt '(ecb-analyse-jump-to-tag "Jump to tag")))))
+)[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (59.45444pt too wide) in paragraph at lines 11965--11965
+ []                          @texttt (cons type (ecb-analyse-create-menu node))
+))[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+[170] [171] [172] [173]
+Overfull \hbox (30.711pt too wide) in paragraph at lines 12130--12130
+ []  @texttt "Things which should be performed after creating a tree-buffer.[] 
+|
+
+@hbox(6.69167+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (13.46494pt too wide) in paragraph at lines 12133--12133
+ []                 @texttt 'ecb-toggle-do-not-leave-window-after-select)[] |
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+
+Overfull \hbox (24.96231pt too wide) in paragraph at lines 12139--12139
+ []                   @texttt 'ecb-toggle-maximize-ecb-window-with-mouse)))[] |
+
+
+@hbox(7.60416+2.43333)x433.62
+.@glue(@leftskip) 90.66629
+.@hbox(0.0+0.0)x0.0
+.@penalty 10000
+.@glue 5.74869
+.@penalty 10000
+.etc.
+
+[174] [175] [176]
+Underfull \hbox (badness 7925) in paragraph at lines 12329--12331
+[]@textrm Again an ex-am-ple with slot @textsl DATA @textrm which sets this slo
+t to the string
+
+@hbox(7.60416+2.12917)x433.62, glue set 4.29875
+.@hbox(0.0+0.0)x15.0
+.@textrm A
+.@textrm g
+.@textrm a
+.@textrm i
+.etc.
+
+[177] [178] [179] [180] [181] [182] [183] [184] [185] [186] [187] [188]
+[189] [190] [191] [192] [193] [194] [195] [196] [197] Chapter 12 [198]
+Missing character: There is no ^^b4 in font cmr10!
+ [199]
+[200] [201] [202] [203] Chapter 13 [204]
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14020--14020
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14029--14029
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14034--14034
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14037--14037
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14042--14042
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14050--14050
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14055--14055
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14059--14059
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14063--14063
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14068--14068
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14073--14073
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14077--14077
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14081--14081
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14085--14085
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14089--14089
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14093--14093
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14097--14097
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14102--14102
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14106--14106
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14110--14110
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14114--14114
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14120--14120
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14124--14124
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14134--14134
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14139--14139
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14148--14148
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14152--14152
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14158--14158
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14162--14162
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14163--14178
+ @textrm For Java the JDEE$[]$ has this fea-
+
+@hbox(8.48477+0.0)x255.8342, glue set 7.76234
+.@glue(@leftskip) 12.0
+.@textrm F
+.@kern-0.91252
+.@textrm o
+.@textrm r
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14163--14178
+ @textrm ture and for all other lan-guages
+
+@hbox(7.60416+2.12917)x255.8342, glue set 10.13823
+.@glue(@leftskip) 12.0
+.@textrm t
+.@textrm u
+.@textrm r
+.@textrm e
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14163--14178
+ @textrm se-man-tic of-fer some-thing sim-i-lar, see
+
+@hbox(7.60416+2.12917)x255.8342, glue set 8.80968
+.@glue(@leftskip) 12.0
+.@textrm s
+.@textrm e
+.@discretionary
+..@textrm -
+.@textrm m
+.etc.
+
+
+Overfull \hbox (26.35413pt too wide) in paragraph at lines 14163--14178
+ @texttt http://cedet.sourceforge.net/intellisense.shtml[] 
+
+@hbox(7.60416+2.43333)x255.8342
+.@glue(@leftskip) 12.0
+.@texttt h
+.@texttt t
+.@texttt t
+.@texttt p
+.etc.
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14179--14179
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14183--14183
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14195--14195
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14199--14199
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14200--14206
+ @textrm Yes, see the op-tion @texttt ecb-cache-directory-
+
+@hbox(7.60416+2.43333)x255.8342, glue set 4.51964
+.@glue(@leftskip) 12.0
+.@textrm Y
+.@kern-0.91252
+.@textrm e
+.@textrm s
+.etc.
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14207--14207
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14211--14211
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14220--14220
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14224--14224
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14225--14226
+ @textrm Yes, see $@textsy h$@textrm un-de-fined$@textsy i$ @textrm [In-te-grat
+-ing speed-bar],
+
+@hbox(8.2125+2.73749)x255.8342, glue set 4.69986
+.@glue(@leftskip) 12.0
+.@textrm Y
+.@kern-0.91252
+.@textrm e
+.@textrm s
+.etc.
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14227--14227
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14231--14231
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14232--14233
+ @textrm Yes, see $@textsy h$@textrm un-de-fined$@textsy i$ @textrm [Grep-ping 
+di-rec-to-ries],
+
+@hbox(8.2125+2.73749)x255.8342, glue set 4.88222
+.@glue(@leftskip) 12.0
+.@textrm Y
+.@kern-0.91252
+.@textrm e
+.@textrm s
+.etc.
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14234--14234
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14238--14238
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14241--14241
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14245--14245
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14252--14252
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14256--14256
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14263--14263
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14267--14267
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14270--14270
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14274--14274
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14277--14277
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14280--14281
+@textrm Which buffers are treated as
+
+@hbox(7.60416+0.0)x173.44534, glue set 5.10547
+.@textrm W
+.@textrm h
+.@textrm i
+.@textrm c
+.@kern-0.30418
+.etc.
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14281--14281
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14282--14283
+ @textrm See the doc-string of the func-tion @texttt ecb-
+
+@hbox(7.60416+2.12917)x255.8342, glue set 5.52075
+.@glue(@leftskip) 12.0
+.@textrm S
+.@textrm e
+.@textrm e
+.@glue 3.65 plus 1.825 minus 1.21666
+.etc.
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14284--14284
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14288--14288
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14293--14293
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14298--14298
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14301--14301
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14305--14305
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14308--14308
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14312--14312
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14315--14315
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14319--14319
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14327--14327
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14331--14331
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14334--14334
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14338--14338
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14341--14341
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14345--14345
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14348--14348
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14352--14352
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14355--14355
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14358--14359
+@textrm Can ECB work to-gether with
+
+@hbox(7.60416+2.12917)x173.44534, glue set 4.41907
+.@textrm C
+.@textrm a
+.@textrm n
+.@glue 3.65 plus 1.825 minus 1.21666
+.@textrm E
+.etc.
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14359--14359
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14362--14362
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14366--14366
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14369--14369
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14373--14373
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14379--14379
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14383--14383
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14390--14390
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14394--14394
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14395--14396
+ @textrm Yes, see $@textsy h$@textrm un-de-fined$@textsy i$ @textrm [Us-ing pop
+up-menus],
+
+@hbox(8.2125+2.73749)x255.8342, glue set 5.24889
+.@glue(@leftskip) 12.0
+.@textrm Y
+.@kern-0.91252
+.@textrm e
+.@textrm s
+.etc.
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14397--14397
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14401--14401
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14402--14403
+ @textrm Yes, see $@textsy h$@textrm un-de-fined$@textsy i$ @textrm [Us-ing pop
+up-menus],
+
+@hbox(8.2125+2.73749)x255.8342, glue set 5.24889
+.@glue(@leftskip) 12.0
+.@textrm Y
+.@kern-0.91252
+.@textrm e
+.@textrm s
+.etc.
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14404--14404
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14408--14408
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14413--14413
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14418--14418
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14421--14421
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14426--14426
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14429--14429
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14433--14433
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14437--14437
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14441--14441
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14444--14444
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14449--14449
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14453--14453
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14457--14457
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14460--14460
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14464--14464
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14467--14467
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14471--14471
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14479--14479
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14483--14483
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14484--14485
+ @textrm Yes, see op-tion @texttt ecb-prescan-directories-
+
+@hbox(7.48248+2.43333)x255.8342, glue set 5.21292
+.@glue(@leftskip) 12.0
+.@textrm Y
+.@kern-0.91252
+.@textrm e
+.@textrm s
+.etc.
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14486--14486
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14491--14491
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14494--14494
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14499--14499
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14502--14502
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14506--14506
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14515--14515
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14519--14519
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14528--14528
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14533--14533
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14542--14542
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14547--14547
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14550--14550
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+
+Overfull \hbox (7.66618pt too wide) in paragraph at lines 14555--14555
+ | 
+
+@hbox(9.34993+3.85005)x4.33382
+.@glue(@leftskip) 12.0
+.@rule(9.34993+3.85005)x0.0
+.@penalty 10000
+.@glue(@parfillskip) 0.0 plus 1.0fil
+.@glue(@rightskip) 0.0
+
+[205] [206] [207] [208] [209] [210] (Command Index) [211] (Option Index)
+[212] (Concept Index) [213] [214] (./ecb.toc [-1] [-2] [-3] [-4] [-5]) [-6] ) 
+Here is how much of TeX's memory you used:
+ 1856 strings out of 97980
+ 24163 string characters out of 1220968
+ 91871 words of memory out of 1500000
+ 2701 multiletter control sequences out of 10000+50000
+ 32127 words of font info for 112 fonts, out of 1200000 for 2000
+ 51 hyphenation exceptions out of 8191
+ 12i,9n,13p,278b,496s stack positions out of 5000i,500n,6000p,200000b,5000s
+
+Output written on ecb.dvi (221 pages, 737128 bytes).

@@ -1,0 +1,232 @@
+@numchapentry{Installation and first steps of ECB}{1}{Install and first steps}{2}
+@numsecentry{Installation of ECB}{1.1}{Installation}{2}
+@numsubsecentry{Installation of ECB for XEmacs users}{1.1.1}{XEmacs Installation}{2}
+@numsubsecentry{Installation of ECB for GNU Emacs users}{1.1.2}{GNU Emacs Installation}{3}
+@numsecentry{How to set up Emacs for file parsing with ECB}{1.2}{Setting up Emacs}{5}
+@numsubsecentry{General hints for a correct setup}{1.2.1}{General hints}{5}
+@numsubsecentry{Setting up semantic}{1.2.2}{Setting up semantic}{5}
+@numsubsecentry{Setup for file types not supported by semantic}{1.2.3}{Non-semantic files}{6}
+@numsecentry{First steps after activating ECB first time}{1.3}{First steps}{7}
+@numchapentry{Overview}{2}{Overview}{8}
+@numchapentry{How to use this manual}{3}{Manual usage}{9}
+@numchapentry{All interactors of ECB}{4}{ECB-interactors}{11}
+@numsecentry{The basic interactors of ECB}{4.1}{Basic interactors}{11}
+@numsubsecentry{General introduction into tree-buffers}{4.1.1}{Tree-buffer basics}{11}
+@numsubsecentry{Displaying the trees with different styles}{4.1.2}{Tree-buffer styles}{12}
+@numsubsubsecentry{Basic knowledge about the styles}{4.1.2.1}{Style basics}{12}
+@numsubsubsecentry{How to customize the ascii-styles}{4.1.2.2}{Ascii-based styles}{13}
+@numsubsubsecentry{Which images are used for the tree}{4.1.2.3}{Tree-buffers with images}{14}
+@numsubsubsecentry{Special images for the Methods-buffer}{4.1.2.4}{Images for Methods-buffer}{15}
+@numsubsecentry{ECB Directories-interactor}{4.1.3}{ECB Directories-buffer}{15}
+@numsubsubsecentry{Usage of the directories interactor}{4.1.3.1}{}{15}
+@numsubsubsecentry{Activating/Displaying the directories interactor}{4.1.3.2}{}{16}
+@numsubsubsecentry{Customizing the directories interactor}{4.1.3.3}{}{16}
+@numsubsecentry{ECB Sources- and history-interactor}{4.1.4}{ECB Sources-buffer}{16}
+@numsubsubsecentry{Usage of the sources/history interactor}{4.1.4.1}{}{16}
+@numsubsubsecentry{Activating/Displaying the sources/history interactor}{4.1.4.2}{}{17}
+@numsubsubsecentry{Customizing the sources/history interactor}{4.1.4.3}{}{17}
+@numsubsecentry{The ECB Methods interactor}{4.1.5}{ECB Methods-buffer}{17}
+@numsubsubsecentry{Usage of the methods interactor}{4.1.5.1}{}{17}
+@numsubsubsecentry{Activating/Displaying the methods interactor}{4.1.5.2}{}{18}
+@numsubsubsecentry{Customizing the methods interactor}{4.1.5.3}{}{18}
+@numsecentry{Add-on interactors of ECB}{4.2}{Add-on interactors}{18}
+@numsubsecentry{Displaying the current semantic context}{4.2.1}{Semantic analyser}{18}
+@numsubsubsecentry{Usage of the analyser-interactor}{4.2.1.1}{}{18}
+@numsubsubsecentry{Interactive commands of the analyser-interactor}{4.2.1.2}{}{19}
+@numsubsubsecentry{Activating/Displaying the analyser-interactor}{4.2.1.3}{}{19}
+@numsubsubsecentry{Customizing the analyser interactor}{4.2.1.4}{}{19}
+@numsubsecentry{Displaying the definition of the current symbol under point}{4.2.2}{Symboldefinition}{19}
+@numchapentry{Activation and Deactivation}{5}{Activation and Deactivation}{20}
+@numsecentry{Standard activation and deactivation}{5.1}{Standard activation}{20}
+@numsecentry{Automatic activation and deactivation}{5.2}{Automatic activation}{20}
+@numchapentry{Usage of ECB}{6}{Usage of ECB}{21}
+@numsecentry{Working with the mouse in the ECB-windows}{6.1}{Using the mouse}{21}
+@numsubsecentry{The primary mouse-button}{6.1.1}{}{21}
+@numsubsecentry{The POWER- or SHIFT-click}{6.1.2}{}{21}
+@numsubsecentry{The secondary mouse-button}{6.1.3}{}{22}
+@numsubsecentry{The right mouse-button}{6.1.4}{}{22}
+@numsubsecentry{Horizontal scrolling with the mouse}{6.1.5}{}{22}
+@numsecentry{Working with the keyboard in the ECB-windows}{6.2}{Using the keyboard}{22}
+@numsubsecentry{Navigation and Selection in a tree-buffer}{6.2.1}{Navigation/Selection}{23}
+@numsubsecentry{Incremental search for a node in current tree-buffer}{6.2.2}{Incremental search}{23}
+@numsubsecentry{Adding personal keybindings for the tree-buffers}{6.2.3}{Personal tree-keybindings}{24}
+@numsubsecentry{Using the popup-menu of a tree-buffer from keyboard.}{6.2.4}{Using popup-menus}{25}
+@numsecentry{Working with the edit-window(s) of the edit-area}{6.3}{The edit-area}{25}
+@numsubsecentry{Documentation of the adviced window functions}{6.3.1}{}{26}
+@numsecentry{Temp- and compile-buffers display in ECB}{6.4}{Temp- and compile-buffers}{29}
+@numsubsecentry{Standard Emacs behavior}{6.4.1}{}{29}
+@numsubsecentry{Using a persistent compile window}{6.4.2}{}{30}
+@numsubsecentry{What to do if there are problems with the compile-window}{6.4.3}{}{30}
+@numsubsecentry{Handling special-display-buffers}{6.4.4}{}{31}
+@numsecentry{How the ``other window'' is determined by ECB}{6.5}{The other window}{31}
+@numsubsecentry{``Other window''-basics in ECB}{6.5.1}{}{31}
+@numsubsecentry{Builtin ``other window'' behaviors of ECB}{6.5.2}{}{32}
+@numsubsecentry{User-defined ``other window'' behavior}{6.5.3}{}{32}
+@numsecentry{Using and customizing the ECB-Methods buffer}{6.6}{The Methods buffer}{34}
+@numsubsecentry{Possible actions after visiting a tag}{6.6.1}{Visiting tags}{35}
+@numsubsecentry{Explicit and automatic expanding of the ECB-methods-buffer}{6.6.2}{Expanding}{35}
+@numsubsubsecentry{Explicit expanding all nodes to a certain expansion level}{6.6.2.1}{}{35}
+@numsubsubsecentry{Explicit expanding of the current node to a certain level}{6.6.2.2}{}{36}
+@numsubsubsecentry{Automatic expansion ot tags after buffer-parsing}{6.6.2.3}{}{36}
+@numsubsubsecentry{Automatic expanding the ECB-methods-buffer for current tag}{6.6.2.4}{}{37}
+@numsubsecentry{Customizing the display of the Methods-buffer}{6.6.3}{Customizing the display}{37}
+@numsubsecentry{Rebuilding the Methods-buffer}{6.6.4}{Rebuilding the Methods}{38}
+@numsecentry{Applying filters to the special ECB-tree-buffers}{6.7}{Filtering the tree-buffers}{39}
+@numsubsecentry{Applying filters to the Directories-buffer}{6.7.1}{Filtering Directories}{39}
+@numsubsecentry{Applying filters to the Sources-buffer}{6.7.2}{Filtering Sources}{39}
+@numsubsubsecentry{Interactive Sources-filters}{6.7.2.1}{}{39}
+@numsubsubsecentry{Default Sources-filters}{6.7.2.2}{}{40}
+@numsubsecentry{Applying filters to the History-buffer}{6.7.3}{Filtering History}{40}
+@numsubsubsecentry{Interactive History-filters}{6.7.3.1}{}{40}
+@numsubsubsecentry{Default History-filters}{6.7.3.2}{}{40}
+@numsubsecentry{Applying filters to the Methods-buffer}{6.7.4}{Filtering Methods}{40}
+@numsubsubsecentry{Possible filter-criterias}{6.7.4.1}{}{40}
+@numsubsubsecentry{Inverse Filters}{6.7.4.2}{}{41}
+@numsubsubsecentry{Layered filters}{6.7.4.3}{}{41}
+@numsubsubsecentry{Display of currently applied filters}{6.7.4.4}{}{41}
+@numsubsubsecentry{Default filters for certain files.}{6.7.4.5}{}{42}
+@numsecentry{Changing, customizing, redrawing and creating layouts}{6.8}{The ECB-layout}{42}
+@numsubsecentry{Changing and customizing the ECB-layout}{6.8.1}{Changing the ECB-layout}{42}
+@numsubsecentry{Redrawing the ECB-layout}{6.8.2}{Redrawing the ECB-layout}{55}
+@numsubsecentry{Changing the sizes of the special ECB-windows}{6.8.3}{Changing window sizes}{55}
+@numsubsecentry{Fixing the sizes of the special ECB-windows}{6.8.4}{Fixing window sizes}{55}
+@numsubsecentry{Interactively creating new layouts}{6.8.5}{Creating a new ECB-layout}{56}
+@numsecentry{Hiding/Showing the ECB windows}{6.9}{Hiding the ECB windows}{58}
+@numsecentry{Maximizing the ECB windows}{6.10}{Maximizing the ECB windows}{59}
+@numsubsecentry{How to maximize and minimize special ecb-tree-windows}{6.10.1}{}{59}
+@numsubsecentry{Selecting a node in a maximized ecb-tree-window}{6.10.2}{}{60}
+@numsecentry{Back- and forward navigation like a browser}{6.11}{Back/forward navigation}{60}
+@numsecentry{Synchronization of the ECB-windows}{6.12}{ECB-window synchronizing}{61}
+@numsecentry{Stealthy background-tasks of ECB}{6.13}{Stealthy background tasks}{62}
+@numsecentry{Interactive ECB commands}{6.14}{Interactive ECB commands}{63}
+@numchapentry{Customizing ECB}{7}{Customizing}{74}
+@numsecentry{General aspects for customizing ECB}{7.1}{General aspects}{74}
+@numsubsecentry{Setq or customize - what should i use?}{7.1.1}{setq or customize}{74}
+@numsubsecentry{Site-wide customizing of ECB}{7.1.2}{Site-wide customizing}{75}
+@numsubsubsecentry{Storing all option-settings in the users custom-file}{7.1.2.1}{}{75}
+@numsubsubsecentry{Using a special setq for site-wide settings}{7.1.2.2}{}{76}
+@numsecentry{The most important options of ECB}{7.2}{Most important options}{77}
+@numsecentry{All customizable options of ECB}{7.3}{Customizable options}{79}
+@numsubsecentry{Group ecb-general}{7.3.1}{ecb-general}{79}
+@numsubsecentry{Group ecb-tree-buffer}{7.3.2}{ecb-tree-buffer}{85}
+@numsubsecentry{Group ecb-directories}{7.3.3}{ecb-directories}{90}
+@numsubsecentry{Group ecb-sources}{7.3.4}{ecb-sources}{96}
+@numsubsecentry{Group ecb-methods}{7.3.5}{ecb-methods}{99}
+@numsubsecentry{Group ecb-history}{7.3.6}{ecb-history}{108}
+@numsubsecentry{Group ecb-analyse}{7.3.7}{ecb-analyse}{110}
+@numsubsecentry{Group ecb-layout}{7.3.8}{ecb-layout}{113}
+@numsubsecentry{Group ecb-compilation}{7.3.9}{ecb-compilation}{121}
+@numsubsecentry{Group ecb-create-layout}{7.3.10}{ecb-create-layout}{124}
+@numsubsecentry{Group ecb-face-options}{7.3.11}{ecb-face-options}{124}
+@numsubsecentry{Group ecb-faces}{7.3.12}{ecb-faces}{126}
+@numsubsecentry{Group ecb-download}{7.3.13}{ecb-download}{128}
+@numsubsecentry{Group ecb-help}{7.3.14}{ecb-help}{129}
+@numsubsecentry{Group ecb-eshell}{7.3.15}{ecb-eshell}{130}
+@numsubsecentry{Group ecb-speedbar}{7.3.16}{ecb-speedbar}{130}
+@numsubsecentry{Group ecb-non-semantic}{7.3.17}{ecb-non-semantic}{130}
+@numsubsecentry{Group ecb-winman}{7.3.18}{ecb-winman}{132}
+@numsubsecentry{Group ecb-mode-line}{7.3.19}{ecb-mode-line}{132}
+@numsubsecentry{Group ecb-version-control}{7.3.20}{ecb-version-control}{133}
+@numchapentry{Submitting a problem report}{8}{Submitting problem report}{137}
+@numchapentry{Upgrading and downloading packages}{9}{Upgrading}{138}
+@numsecentry{Downloading new versions of ECB and/or required packages}{9.1}{Downloading new versions}{138}
+@numsecentry{Automatic upgrading of options}{9.2}{Auto. option-upgrading}{139}
+@numsubsecentry{User interface for option-upgrading}{9.2.1}{User interface}{139}
+@numsubsecentry{Background information}{9.2.2}{Background information}{140}
+@numchapentry{Tips and tricks}{10}{Tips and tricks}{142}
+@numsecentry{Changing faces in the ECB tree-buffers}{10.1}{Changing faces}{142}
+@numsecentry{Working with small screens}{10.2}{Small screens}{143}
+@numsecentry{Working with big screens}{10.3}{Big screens}{143}
+@numsecentry{Simulating speedbar without an extra frame}{10.4}{Simulating speedbar}{143}
+@numsecentry{Integrating speedbar in the ECB-frame}{10.5}{Integrating speedbar}{144}
+@numsecentry{Working with large directories}{10.6}{Large directories}{145}
+@numsecentry{Working with remote directories}{10.7}{Remote directories}{146}
+@numsubsecentry{General remarks}{10.7.1}{}{146}
+@numsubsecentry{Excluding remote directories from time-consuming tasks}{10.7.2}{}{146}
+@numsubsecentry{Caching the contents of remote directories}{10.7.3}{}{147}
+@numsecentry{Supporting Version control systems}{10.8}{Version-control support}{147}
+@numsubsecentry{How ECB identifies the VC-backend of a dir}{10.8.1}{Identifying backends}{147}
+@numsubsubsecentry{Special remarks for XEmacs}{10.8.1.1}{}{148}
+@numsubsecentry{How ECB checks the VC-state of a file}{10.8.2}{Checking the state}{148}
+@numsubsubsecentry{Getting heuristic state-values or real ones for CVS}{10.8.2.1}{}{149}
+@numsubsecentry{Important informations about remote repositories}{10.8.3}{Remote repositories}{150}
+@numsubsubsecentry{Remote paths and the VC-support of ECB}{10.8.3.1}{}{150}
+@numsubsecentry{How to refresh ECB-state-display when changed outside}{10.8.4}{Refreshing the VC-state}{150}
+@numsubsecentry{Necessary steps and informations for adding new backends}{10.8.5}{Adding new backends}{151}
+@numsubsecentry{Currently know problems with the VC-support}{10.8.6}{Known VC-problems}{152}
+@numsubsubsecentry{Remote repositories and XEmacs}{10.8.6.1}{}{152}
+@numsecentry{Optimal using of eshell in ECB}{10.9}{Using eshell}{153}
+@numsecentry{Grepping directories with ECB}{10.10}{Grepping directories}{154}
+@numsecentry{Working best with ECB and JDEE}{10.11}{Working with JDEE}{154}
+@numsecentry{Displaying the compile-window on demand}{10.12}{Compile-window on demand}{155}
+@numsecentry{Parsing and displaying non-semantic sources}{10.13}{Non-semantic sources}{155}
+@numsubsecentry{Enabling parsing and displaying of non-semantic-sources}{10.13.1}{}{156}
+@numsubsecentry{Automatic rescanning/reparsing of non-semantic-sources}{10.13.2}{}{156}
+@numsubsecentry{Customizing the display of the tags}{10.13.3}{}{157}
+@numsecentry{Using hide-show from the methods-buffer-menu}{10.14}{Hide-show}{157}
+@numsecentry{Support of several Emacs-window-managers}{10.15}{Window-managers and ECB}{158}
+@numsubsecentry{Enabling of the support}{10.15.1}{}{158}
+@numsubsecentry{Usage of a window-manager in combination with ECB}{10.15.2}{}{159}
+@numsubsecentry{Disabling the support}{10.15.3}{}{159}
+@numsecentry{Using semanticdb to jump to type-tags defined in other files}{10.16}{Using semanticdb}{159}
+@numchapentry{Entry points for Elisp programmers}{11}{Elisp programming}{162}
+@numsecentry{Variables for Elisp-programs}{11.1}{List of variables}{162}
+@numsecentry{Available hooks of ECB}{11.2}{List of hooks}{162}
+@numsecentry{The library tree-buffer.el}{11.3}{tree-buffer}{162}
+@numsubsecentry{General description of tree-buffers}{11.3.1}{Introduction}{163}
+@numsubsubsecentry{What is a tree-buffer?}{11.3.1.1}{}{163}
+@numsubsubsecentry{General recipe for a tree-buffer}{11.3.1.2}{}{164}
+@numsubsecentry{How to create a new tree-buffer}{11.3.2}{A new tree-buffer}{164}
+@numsubsecentry{How to create a new tree-node}{11.3.3}{A new tree-node}{176}
+@numsubsubsecentry{Content of a tree-node}{11.3.3.1}{}{176}
+@numsubsubsecentry{Creating a new tree-node and adding it to the tree}{11.3.3.2}{}{177}
+@numsubsubsecentry{Accessing the slots of a tree-node}{11.3.3.3}{}{177}
+@numsubsecentry{How to update a tree-buffer-display after changes}{11.3.4}{Updating a tree-buffer}{177}
+@numsubsecentry{Default and customizable keybindings of a tree-buffer}{11.3.5}{Tree-buffer keybindings}{178}
+@numsubsecentry{All functions available for tree-buffers and tree-nodes}{11.3.6}{The tree-buffer-API}{180}
+@numsubsubsecentry{The API for a tree-buffer:}{11.3.6.1}{}{180}
+@numsubsubsecentry{The API for a tree-node}{11.3.6.2}{}{181}
+@numsubsecentry{Things which are strictly forbidden}{11.3.7}{Do not with tree-buffer}{181}
+@numsubsecentry{How to deal with certain programming-requirements}{11.3.8}{Tree-buffer How to}{182}
+@numsubsubsecentry{Caching the current tree-buffer display}{11.3.8.1}{}{182}
+@numsecentry{How to deal with the adviced functions}{11.4}{Adviced functions}{182}
+@numsecentry{How to program new layouts and new special windows}{11.5}{The layout-engine}{183}
+@numsubsecentry{How to program a new layout}{11.5.1}{Programming a new layout}{183}
+@numsubsecentry{All aspects of programming special windows}{11.5.2}{Programming special windows}{186}
+@numsubsubsecentry{The outline of the example layout:}{11.5.2.1}{}{187}
+@numsubsubsecentry{The description of the layout-contents}{11.5.2.2}{}{187}
+@numsubsubsecentry{The example code}{11.5.2.3}{}{187}
+@numsubsubsecentry{The bufferinfo buffer of the example}{11.5.2.4}{}{188}
+@numsubsubsecentry{The action buffer of the example}{11.5.2.5}{}{190}
+@numsubsubsecentry{Adding the bufferinfo- and action-buffer to a new layout}{11.5.2.6}{}{191}
+@numsubsubsecentry{Synchronizing the bufferinfo-buffer automatically}{11.5.2.7}{}{192}
+@numsubsubsecentry{Activating and deactivating new layouts}{11.5.2.8}{}{192}
+@numsubsecentry{The wide range of possible layout-outlines}{11.5.3}{Possible layout-outlines}{193}
+@numsubsecentry{The complete layout-engine API of ECB}{11.5.4}{The layout-engine API}{197}
+@numchapentry{Conflicts and bugs of ECB}{12}{Conflicts and bugs}{199}
+@numsecentry{Conflicts with other packages}{12.1}{Conflicts}{199}
+@numsubsecentry{Proved workarounds or recommendations for other packages}{12.1.1}{}{199}
+@numsubsubsecentry{Package bs.el}{12.1.1.1}{}{199}
+@numsubsubsecentry{Package BBDB}{12.1.1.2}{}{199}
+@numsubsubsecentry{Package calendar.el}{12.1.1.3}{}{199}
+@numsubsubsecentry{Package cygwin-mount.el}{12.1.1.4}{}{200}
+@numsubsubsecentry{Package desktop.el}{12.1.1.5}{}{200}
+@numsubsubsecentry{Package edebug (Lisp Debugger)}{12.1.1.6}{}{200}
+@numsubsubsecentry{Package ediff.el}{12.1.1.7}{}{201}
+@numsubsubsecentry{Package func-menu.el}{12.1.1.8}{}{201}
+@numsubsubsecentry{Package Gnus (Newsreader)}{12.1.1.9}{}{201}
+@numsubsubsecentry{Package JDEE (Java Development Environment)}{12.1.1.10}{}{201}
+@numsubsubsecentry{Package scroll-all.el (scroll-all-mode)}{12.1.1.11}{}{201}
+@numsubsubsecentry{Package VC (Version Control)}{12.1.1.12}{}{201}
+@numsubsubsecentry{Package VM (Emacs Mail-Client)}{12.1.1.13}{}{202}
+@numsubsubsecentry{Package winner.el (winner-mode)}{12.1.1.14}{}{202}
+@numsubsubsecentry{Package wb-line-number.el}{12.1.1.15}{}{202}
+@numsubsubsecentry{Application xrefactory}{12.1.1.16}{}{202}
+@numsubsecentry{What to do for unknown conflicts with other packages}{12.1.2}{}{202}
+@numsecentry{Known bugs}{12.2}{Bugs}{203}
+@numsubsecentry{Following the source-file link in a help-buffer}{12.2.1}{}{203}
+@numsubsecentry{Extra history-entries for JDEE source-buffers}{12.2.2}{}{203}
+@numchapentry{Frequently asked questions}{13}{FAQ}{205}
+@unnchapentry{Command Index}{10001}{Command Index}{212}
+@unnchapentry{Option Index}{10002}{Option Index}{213}
+@unnchapentry{Concept Index}{10003}{Concept Index}{214}

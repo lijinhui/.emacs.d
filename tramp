@@ -1,0 +1,42 @@
+;; -*- emacs-lisp -*-
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+((["ssh2" "MNET\\\\m_milesli" "172.18.62.36#36000" nil]
+  ("uname" "Linux 2.6.16.54-0.2.3-TENCENT-080623")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/usr/sbin" "/usr/local/bin"))
+  ("remote-shell" "/bin/sh")
+  ("~" "/home/MNET/m_milesli")
+  ("ls" "/bin/ls")
+  ("stat" "\\stat")
+  ("file-exists" "test -e")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 10003)
+  ("ls-dired" t)
+  ("local-encoding" base64-encode-region)
+  ("local-decoding" base64-decode-region)
+  ("remote-encoding" "recode data..base64")
+  ("remote-decoding" "recode base64..data")
+  ("perl" "\\perl")
+  ("uid-integer" 12541))
+ (["ssh2" "milesli" "10.1.131.6#36000" nil]
+  ("uname" "Linux 2.6.16.54-0.2.3-TENCENT64-080623")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/usr/sbin" "/usr/local/bin"))
+  ("remote-shell" "/bin/sh")
+  ("~" "/data1/milesli")
+  ("ls" "/bin/ls")
+  ("stat" "\\stat")
+  ("file-exists" "test -e")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 1002)
+  ("ls-dired" t)
+  ("local-encoding" base64-encode-region)
+  ("local-decoding" base64-decode-region)
+  ("remote-encoding" "recode data..base64")
+  ("remote-decoding" "recode base64..data")
+  ("perl" "\\perl")
+  ("uid-integer" 1017)))
