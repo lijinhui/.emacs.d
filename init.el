@@ -19,8 +19,21 @@
 (load-file "~/.emacs.d/init_org.el")
 ;;(add-to-list 'load-path "~/.emacs.d/company")
 
+;;;;---------打开文件时只读
+(defun my-find-file-exist-view-mode ()
+  (interactive)
+  (when (file-exists-p (buffer-file-name)) (view-mode))
+  )
+(eval-after-load "view"
+  '(let ((map view-mode-map))
+     (define-key map "h" 'backward-char)
+     (define-key map "l" 'forward-char)
+     (define-key map "j" 'next-line)
+     (define-key map "k" 'previous-line))
+  )
+(add-hook 'find-file-hook 'my-find-file-exist-view-mode)
 
-(add-hook 'find-file-hook 'view-mode)
+
 
 ;;;tree
 (load-file "~/.emacs.d/init_tree.el")

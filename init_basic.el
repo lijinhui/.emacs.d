@@ -167,11 +167,66 @@
 
 (defadvice kill-region (before slickcut activate compile)
   "When called interactively with no active region, kill a single line instead."
-  (interactive
+  (interactive   
    (if mark-active (list (region-beginning) (region-end))
      (list (line-beginning-position)
    (line-beginning-position 2)))))
 
+
+(defun my-append-to-org-bufer ()
+  (interactive)
+  (if mark-active 
+      (progn
+	(append-to-buffer "r.org" (region-beginning) (region-end))
+	)
+    (progn
+      (append-to-buffer "r.org" (line-beginning-position) (line-beginning-position 2))
+      (next-line)
+    ))
+  )
+
+(defun my-append-newline-to-org-buffer ()
+   (interactive)
+   (with-current-buffer "r.org"
+     (insert "\n")
+     (message "inserted newline to org buffer")
+       )
+   )
+
+(require 'info)
+(define-key Info-mode-map (kbd "k") 'my-append-to-org-bufer)
+(define-key Info-mode-map (kbd "o") 'my-append-newline-to-org-buffer)
+
+(define-key Info-mode-map (kbd "j") 'next-line)
+(define-key Info-mode-map (kbd "f") 'previous-line)
+
+
+;;;;---rotate window - buffer
+;;;;
+(defun rotate-windows ()
+  "Rotate your windows" (interactive) (cond ((not (> (count-windows) 1)) (message "You can't rotate a single window!"))
+ (t
+  (setq i 1)
+  (setq numWindows (count-windows))
+  (while  (< i numWindows)
+    (let* (
+           (w1 (elt (window-list) i))
+           (w2 (elt (window-list) (+ (% i numWindows) 1)))
+           (b1 (window-buffer w1))
+           (b2 (window-buffer w2))
+           (s1 (window-start w1))
+           (s2 (window-start w2))
+           )
+      (set-window-buffer w1  b2)
+      (set-window-buffer w2 b1)
+      (set-window-start w1 s2)
+      (set-window-start w2 s1)
+      (setq i (1+ i)))))))
+
+
+(global-set-key (kbd "C-M-j") 'rotate-windows)
+
+ 
 
 (print "end of common set")
 ;-----end of common set----------
@@ -595,3 +650,10 @@ there's a region, all lines that region covers will be duplicated."
 
 
 (global-set-key (kbd "C-c d") 'duplicate-current-line-or-region)
+
+
+
+
+;;;;info dirs
+(require 'info)
+(add-to-list 'Info-default-directory-list "/home/lijinhui/info/")
