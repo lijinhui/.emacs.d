@@ -657,3 +657,9 @@ there's a region, all lines that region covers will be duplicated."
 ;;;;info dirs
 (require 'info)
 (add-to-list 'Info-default-directory-list "/home/lijinhui/info/")
+(add-to-list 'Info-default-directory-list "/home/lijinhui/.emacs.d/ess/doc/")
+
+(add-hook 'Info-mode-hook		; After Info-mode has started
+        (lambda ()
+	  (setq Info-additional-directory-list Info-default-directory-list)
+	  ))

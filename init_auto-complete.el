@@ -4,6 +4,20 @@
 (add-to-list 'load-path "~/.emacs.d/ropemacs/")
 (add-to-list 'load-path "~/.emacs.d/Pymacs-0.23/")
 (require 'python)
+(require 'ipython)
+(require 'highlight-symbol)
+(custom-set-faces
+ '(my-tab-face            ((((class color)) (:background "grey10"))) t)
+ '(my-trailing-space-face ((((class color)) (:background "red"))) t)
+ '(my-long-line-face ((((class color)) (:background "red"))) t))
+
+(defun my-python-mode-hook ()
+  (highlight-symbol-mode t)
+  (setq show-trailing-whitespace t)    
+  )
+
+(add-hook 'python-mode-hook 'my-python-mode-hook)
+
 (autoload 'python-mode "python-mode" "Python Mode." t)
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 (add-to-list 'interpreter-mode-alist '("python" . python-mode))
@@ -14,7 +28,7 @@
 (print "yasnippet")
 (require 'yasnippet) ;; not yasnippet-bundle
 (yas/initialize)
-(yas/load-directory (concat  "/mnt/f/lijinhui/.emacs.d/snippets"))
+(yas/load-directory (concat  "~/.emacs.d/snippets"))
 ;;(setq yas/trigger-key (kbd "C-c C-j"))
 (print "end of yasnippet")
 ;;--------------end of yasnippet----------------------
