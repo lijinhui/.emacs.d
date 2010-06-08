@@ -12,7 +12,7 @@
 (load-file "~/.emacs.d/init_basic.el")
 (load-file "~/.emacs.d/init_auto-complete.el")
 (load-file "~/.emacs.d/init_ack.el")
-
+(load-file "~/.emacs.d/init_cedet.el")
 
 
 ;;(load-file "~/.emacs.d/init_company.el")
@@ -44,6 +44,9 @@
 ;;;tabbar
 (require 'tabbar)
 (tabbar-mode)
+(global-set-key (kbd "C-x C-n") 'tabbar-forward-tab)
+(global-set-key (kbd "C-x C-p") 'tabbar-backward-tab)
+
 
 ;;;;multi-term
 
@@ -64,14 +67,16 @@
  '(tabbar-default ((((class color grayscale) (background dark)) (:inherit variable-pitch :background "gray50" :foreground "gray80" :height 0.8))))
  '(tabbar-selected ((t (:inherit tabbar-default :background "black" :foreground "green" :box (:line-width 1 :color "white" :style pressed-button) :weight normal))))
  '(which-func ((((class color) (min-colors 88) (background dark)) (:foreground "pink")))))
-(add-hook 'font-lock-mode-hook
-      (function
-       (lambda ()
-         (setq font-lock-keywords
-           (append font-lock-keywords
-               '(("\t+" (0 'my-tab-face t))
+
+(defun my-font-lock-mode-hook()
+  (setq font-lock-keywords
+	(append font-lock-keywords
+		   '(("\t+" (0 'my-tab-face t))
                  ("^.\\{101,\\}$" (0 'my-long-line-face t))
-                 ("[ \t]+$"      (0 'my-trailing-space-face t))))))))
+                 ("[ \t]+$"      (0 'my-trailing-space-face t))))))
+
+
+(add-hook 'font-lock-mode-hook 'my-font-lock-mode-hook)
 
 
 ;;; seting gbk

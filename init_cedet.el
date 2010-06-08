@@ -88,6 +88,8 @@
 
 (global-set-key (kbd "C-c s m") 'semantic-ia-fast-jump)
 
+(global-semantic-stickyfunc-mode -1)
+
 ;(ecb-activate)
 (print "end of ecb")
 ;;--------end of ecb---------

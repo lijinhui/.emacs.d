@@ -16,6 +16,9 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 
+(define-key org-mode-map (kbd "C-c m") 'org-time-stamp)
+
+
 (setq org-log-done '(done)) 
 (org-agenda-list)
 (setq org-tag-alist '(("@work" . ?w) ("@home" . ?h) ("laptop" . ?l) ("startup" . ?s) ("WeekPlan" . ?p) ("DayPlan" . ?d)))
