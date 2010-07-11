@@ -4,7 +4,11 @@
 (add-to-list 'load-path "~/.emacs.d/ropemacs/")
 (add-to-list 'load-path "~/.emacs.d/Pymacs-0.23/")
 (require 'python)
+(setq ipython-command "~/software/ipython/ipython.py")
+(setq py-python-command-args '("-pylab" "--colors" "Linux"))
+(add-to-list 'load-path "~/software/ipython/docs/emacs/")
 (require 'ipython)
+
 (require 'highlight-symbol)
 (custom-set-faces
  '(my-tab-face            ((((class color)) (:background "grey10"))) t)
@@ -80,12 +84,13 @@
 
 (apply-define-key
  ac-complete-mode-map
- `(("<return>"   ac-complete)
-   ("RET"        ac-complete)
+ `(
+   ;;("<return>"   ac-complete)
+   ;;("RET"        ac-complete)
    ("M-j"        ac-complete)
    ("<C-return>" ac-complete)
-   ("M-n"        ac-next)
-   ("M-p"        ac-previous)))
+   ("C-n"        ac-next)
+   ("C-p"        ac-previous)))
 
 (setq ac-dwim t)
 (setq ac-candidate-max ac-candidate-menu-height)
@@ -153,10 +158,13 @@
                 (lambda (completion)
                   (concat ac-prefix completion))
                 (ignore-errors
-                  (rope-completions))))))
+                  (rope-completions))))
+	 (print "rope-completions:")
+	 (print ac-ropemacs-completions-cache)
+
+	 ))
     (candidates . (lambda ()
                     (all-completions ac-prefix ac-ropemacs-completions-cache)))
-    
     (candidate-face . ac-ropemacs-candidate-face)
     (selection-face . ac-ropemacs-selection-face)))
 
@@ -171,6 +179,98 @@
   (add-hook 'python-mode-hook 'ac-ropemacs-setup))
 
 (add-hook 'python-mode-hook 'ac-ropemacs-setup)
+
+
+
+;;;ipython
+
+(setq ac-ipython-pattern "")
+(defun ac-ipython-get-pattern()
+  (interactive)
+  (let* (
+	 (beg (save-excursion (skip-chars-backward "a-z0-9A-Z_./" (point-at-bol))
+			      (point)))
+	 (end (point))
+	 (pattern (buffer-substring-no-properties beg end)))
+      ;;(message (format "DEBUG pattern = %S" (list pattern beg end)))
+      (list pattern beg end)
+      ))
+(defun ac-ipython-complete ()
+  (interactive)
+  (let* ((ugly-return nil)
+         (sep ";")
+         (python-process (or (get-buffer-process (current-buffer))
+			     (get-process py-which-bufname)))
+	 (pattern (car (ac-ipython-get-pattern)))
+	 (completions nil)
+         (comint-preoutput-filter-functions
+          (append comint-preoutput-filter-functions
+                  '(ansi-color-filter-apply
+                    (lambda (string)
+                      (setq ugly-return (concat ugly-return string))
+                      "")))))
+
+    (process-send-string python-process
+			 (format ipython-completion-command-string pattern))
+    (accept-process-output python-process)
+    (setq completions
+	  (split-string (substring ugly-return 0 (position ?\n ugly-return)) sep))
+    ;;(message (format "DEBUG completions: %S" completions))
+    completions)
+  )
+
+
+(defvar ac-source-ipython
+  '(
+    ;;init
+    ;;. (lambda ()
+    ;;	 (setq ac-ipython-completions-cache
+    ;;           (ignore-errors
+    ;;             (ac-ipython-complete)))
+    ;;	 (print (concat "ac-prefix=" ac-prefix))
+    ;;	 (print "ipython-completions:")
+    ;;	 (print ac-ipython-completions-cache)
+    ;;    ;;(setq ac-ipython-completions-cache
+    ;;	 ;;(ac-ipython-complete))
+    ;;	 ))
+    (candidates . (lambda ()
+		    ;(print (format "ac-prefix=%S ac-point=%S" ac-prefix ac-point))
+		    ;(setq pattern (ac-ipython-get-pattern))
+		    ;(setq ac-ipython-pattern (car pattern))
+		    ;(setq ac-ipython-point (cadr pattern))
+		    ;(print (format "pattern=%S point=%S" ac-ipython-pattern ac-ipython-point))
+		    (setq pattern (ac-ipython-get-pattern))
+		    (setq ac-prefix (car pattern))
+		    (setq ac-point (cadr pattern))
+		    ;;(print "all-completions:")
+		    ;;(print (ac-ipython-complete))
+		    (sort (ac-ipython-complete)
+			  (lambda (a b)
+			    (string<
+			     (if (string= (substring a 0 1) "%")
+				 (substring a 1)
+			       a)
+			     (if (string= (substring b 0 1) "%")
+				 (substring b 1)
+			       b))))))
+    (candidate-face . ac-ropemacs-candidate-face)
+    (selection-face . ac-ropemacs-selection-face)))
+
+(defun ac-ipython-setup ()
+  (set (make-local-variable 'ac-sources)
+       '(ac-source-ipython ac-source-words-in-buffer)
+        )
+  (setq ac-omni-completion-sources '(("\\." ac-source-ipython)))
+  (print "ac-source-ipython done")
+  (auto-complete-mode 1)
+  )
+
+(add-hook 'py-shell-hook 'ac-ipython-setup)
+
+
+
+
+
 
 
 
