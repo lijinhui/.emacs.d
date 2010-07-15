@@ -13,13 +13,21 @@
 (load-file "~/.emacs.d/init_auto-complete.el")
 (load-file "~/.emacs.d/init_ack.el")
 (load-file "~/.emacs.d/init_cedet.el")
-
+(load-file "~/.emacs.d/init_python.el")
 
 ;;(load-file "~/.emacs.d/init_company.el")
 (load-file "~/.emacs.d/init_session.el")
 
 (load-file "~/.emacs.d/init_org.el")
 ;;(add-to-list 'load-path "~/.emacs.d/company")
+
+;;;default font
+
+
+(defun fontify-frame (frame)
+  (set-frame-parameter frame 'font "Monospace-12")
+)
+(push 'fontify-frame after-make-frame-functions)
 
 ;;;;---------打开文件时只读
 (defun my-find-file-exist-view-mode ()
@@ -38,14 +46,14 @@
 
 
 ;;;tree
-(load-file "~/.emacs.d/init_tree.el")
+;;(load-file "~/.emacs.d/init_tree.el")
 
 
 ;;;tabbar
-(require 'tabbar)
-(tabbar-mode)
-(global-set-key (kbd "C-x C-n") 'tabbar-forward-tab)
-(global-set-key (kbd "C-x C-p") 'tabbar-backward-tab)
+;(require 'tabbar)
+;(tabbar-mode)
+;(global-set-key (kbd "C-x C-n") 'tabbar-forward-tab)
+;(global-set-key (kbd "C-x C-p") 'tabbar-backward-tab)
 
 
 ;;;;multi-term
@@ -53,30 +61,27 @@
 (require 'multi-term)
 
 
-;;;trailing whitespace, long lines font-lock
-
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#102e4e" :foreground "lightblue" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "outline" :family "Courier New"))))
- '(my-long-line-face ((((class color)) (:background "black"))) t)
- '(my-tab-face ((((class color)) (:background "grey10"))) t)
- '(my-trailing-space-face ((((class color)) (:background "red"))) t)
- '(tabbar-default ((((class color grayscale) (background dark)) (:inherit variable-pitch :background "gray50" :foreground "gray80" :height 0.8))))
- '(tabbar-selected ((t (:inherit tabbar-default :background "black" :foreground "green" :box (:line-width 1 :color "white" :style pressed-button) :weight normal))))
- '(which-func ((((class color) (min-colors 88) (background dark)) (:foreground "pink")))))
-
-(defun my-font-lock-mode-hook()
-  (setq font-lock-keywords
-	(append font-lock-keywords
-		   '(("\t+" (0 'my-tab-face t))
-                 ("^.\\{101,\\}$" (0 'my-long-line-face t))
-                 ("[ \t]+$"      (0 'my-trailing-space-face t))))))
+;;;; WARNING: This method will make emacsclient can't start up
+;;;; use whitespace-mode instead
+;;;;(defun my-font-lock-mode-hook()
+;;;;  (setq font-lock-keywords
+;;;;	(append font-lock-keywords
+;;;;		   '(("\t+" (0 'my-tab-face t))
+;;;;                 ("^.\\{101,\\}$" (0 'my-long-line-face t))
+;;;;                 ("[ \t]+$"      (0 'my-trailing-space-face t))))))
+;;;;
+;;;;
+;;;;(add-hook 'font-lock-mode-hook 'my-font-lock-mode-hook)
 
 
-(add-hook 'font-lock-mode-hook 'my-font-lock-mode-hook)
+;;whitespace-mode
+;;lines-tail 只标识长度超过配置长度的部分
+(setq whitespace-style  '(tabs tab-mark trailing lines-tail ))
+(setq whitespace-tab 'whitespace-line)
+(global-whitespace-mode)
+
+
+
 
 
 ;;; seting gbk

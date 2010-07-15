@@ -3,6 +3,7 @@
 (require 'org-install)
 (defun my-org-mode-hook()
   (auto-fill-mode -1)
+  (define-key org-mode-map (kbd "C-c m") 'org-time-stamp)
   )
 (add-hook 'org-mode-hook 'my-org-mode-hook)
 (setq org-agenda-files (list "~/org/work.org"
@@ -16,7 +17,7 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 
-(define-key org-mode-map (kbd "C-c m") 'org-time-stamp)
+;;
 
 
 (setq org-log-done '(done)) 

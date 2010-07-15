@@ -66,7 +66,7 @@
 (require 'ac-anything)
 ;;(require 'rcodetools)
 (require 'auto-complete+)
-
+(add-to-list 'ac-modes 'nxml-mode)
 ;;(require 'javascript-mode "javascript")
 ;;(require 'js2-mode)
 ;;(require 'css-mode)
@@ -87,7 +87,7 @@
  `(
    ;;("<return>"   ac-complete)
    ;;("RET"        ac-complete)
-   ("M-j"        ac-complete)
+   ("C-;"        ac-complete)
    ("<C-return>" ac-complete)
    ("C-n"        ac-next)
    ("C-p"        ac-previous)))
@@ -262,9 +262,11 @@
         )
   (setq ac-omni-completion-sources '(("\\." ac-source-ipython)))
   (print "ac-source-ipython done")
+  (define-key py-shell-map (kbd "<f8>") 'ipython-to-doctest)
   (auto-complete-mode 1)
   )
 
+(global-set-key (kbd "<f9>") 'py-shell)
 (add-hook 'py-shell-hook 'ac-ipython-setup)
 
 
