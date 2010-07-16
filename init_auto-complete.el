@@ -74,7 +74,7 @@
 ;; After do this, isearch any string, M-: (match-data) always
 ;; return the list whose elements is integer
 (global-auto-complete-mode 1)
-
+(global-set-key (kbd "C-<f8>") 'auto-complete-mode)
 ;; 不让回车的时候执行`ac-complete', 因为当你输入完一个
 ;; 单词的时候, 很有可能补全菜单还在, 这时候你要回车的话,
 ;; 必须要干掉补全菜单, 很麻烦, 用M-j来执行`ac-complete'

@@ -22,6 +22,18 @@
   (add-to-list 'flymake-allowed-file-name-masks
                '("\\.py\\'" flymake-pylint-init)))
 
+
+
+(defun my-add-break-for-ipython-pdb ()
+  (interactive)
+  (setq line (line-number-at-pos))
+  (setq str (format "b %s:%d" (buffer-file-name (current-buffer)) line))
+  (with-current-buffer
+      (get-buffer "*Python*")
+    (end-of-buffer)
+    (insert str))
+  )
+
 ;; Set as a minor mode for python
 (defun my-python-mode-hook ()
   (setq whitespace-style  '(tabs tab-mark trailing lines-tail ))
@@ -31,6 +43,9 @@
   (whitespace-mode t)
 
   (flymake-mode t)
+
+  (define-key py-mode-map (kbd "<f7>") 'my-add-break-for-ipython-pdb)
+
 )
 
 (add-hook 'python-mode-hook 'my-python-mode-hook)
