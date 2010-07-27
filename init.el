@@ -20,13 +20,28 @@
 
 (load-file "~/.emacs.d/init_org.el")
 ;;(add-to-list 'load-path "~/.emacs.d/company")
+(require 'smart-operator)
 
-;;;default font
+;;emacs server for chrome
+(require 'edit-server)
+(edit-server-start)
+
+(global-set-key (kbd "<f11>") 'imenu)
+
+ ;; Shift + scroll to change font size
+(global-set-key [C-mouse-4] 'text-scale-increase)
+(global-set-key [C-mouse-5] 'text-scale-decrease)
+;;;cursor type
+(setq default-cursor-type 'box)
+(blink-cursor-mode)
+
 
 
 (defun fontify-frame (frame)
   (set-frame-parameter frame 'font "Monospace-12")
 )
+(when window-system
+  (set-frame-parameter nil 'font "Monospace-12"))
 (push 'fontify-frame after-make-frame-functions)
 
 ;;;;---------打开文件时只读
@@ -50,7 +65,7 @@
 
 
 ;;;tabbar
-;(require 'tabbar)
+(require 'tabbar)
 ;(tabbar-mode)
 ;(global-set-key (kbd "C-x C-n") 'tabbar-forward-tab)
 ;(global-set-key (kbd "C-x C-p") 'tabbar-backward-tab)
@@ -104,3 +119,13 @@
  '(show-paren-mode t)
  '(tabbar-mode t))
 
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(my-long-line-face ((((class color)) (:background "red"))) t)
+ '(my-tab-face ((((class color)) (:background "grey10"))) t)
+ '(my-trailing-space-face ((((class color)) (:background "red"))) t)
+ '(tabbar-selected-face ((t (:inherit tabbar-default-face :background "black" :foreground "green" :box (:line-width 2 :color "white" :style released-button)))))
+ '(tabbar-unselected-face ((t (:inherit tabbar-default-face :foreground "black" :box (:line-width 2 :color "white" :style pressed-button))))))

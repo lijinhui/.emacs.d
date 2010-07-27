@@ -263,7 +263,7 @@
   (setq ac-omni-completion-sources '(("\\." ac-source-ipython)))
   (print "ac-source-ipython done")
   (define-key py-shell-map (kbd "<f8>") 'ipython-to-doctest)
-  (auto-complete-mode 1)
+  ;;(auto-complete-mode 1)
   )
 
 (global-set-key (kbd "<f9>") 'py-shell)

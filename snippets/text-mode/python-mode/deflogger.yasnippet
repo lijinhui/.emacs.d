@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: deflogger
+# --
+def createLogger(logfile) :
+    """获取日志记录对象"""
+    import logging,logging.handlers
+    logger = logging.getLogger()
+    hdlr = logging.handlers.RotatingFileHandler(logfile, maxBytes = ${1:100*1000*1000}, backupCount = ${2:5})
+    formatter = logging.Formatter('%(asctime)s %(levelname)10s [[file:%(filename)s::%(lineno)d]]: %(message)s')
+
+    hdlr.setFormatter(formatter)
+    logger.addHandler(hdlr)
+    logger.setLevel(logging.NOTSET)
+    return logger
