@@ -34,8 +34,19 @@
     (insert str))
   )
 
+
+
+(defun py-outline-level ()
+"This is so that `current-column` DTRT in otherwise-hidden text"
+;; from ada-mode.el
+(let (buffer-invisibility-spec)
+  (save-excursion
+    (skip-chars-forward "\t ")
+    (current-column))))
+
 ;; Set as a minor mode for python
 (defun my-python-mode-hook ()
+  (interactive)
   (setq whitespace-style  '(tabs tab-mark trailing lines-tail ))
   (setq whitespace-tab 'whitespace-trailing)
   ;;long line column size
@@ -46,6 +57,20 @@
 
   (define-key py-mode-map (kbd "<f7>") 'my-add-break-for-ipython-pdb)
 
+  ;;outline
+  (interactive)
+  (setq outline-regexp "[^ \t\n]\\|[ \t]*\\(def[ \t]+\\|class[ \t]+\\)")
+  (setq outline-level 'py-outline-level)
+  (outline-minor-mode t)
+  ;(hide-body)
+  (show-paren-mode 1)
+
+  (define-key py-mode-map (kbd "C-c h h") 'hide-entry)
+  (define-key py-mode-map (kbd "C-c h s") 'show-entry)
+  (define-key py-mode-map (kbd "C-c h k") 'hide-entry)
+  (define-key py-mode-map (kbd "C-c h j") 'show-entry)
+  (define-key py-mode-map (kbd "C-c h a") 'show-all)
+  (define-key py-mode-map (kbd "C-c h b") 'hide-body)
 )
 
 (add-hook 'python-mode-hook 'my-python-mode-hook)
