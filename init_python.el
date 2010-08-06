@@ -59,7 +59,7 @@
 
   ;;outline
   (interactive)
-  (setq outline-regexp "[^ \t\n]\\|[ \t]*\\(def[ \t]+\\|class[ \t]+\\)")
+  (setq outline-regexp "[^ \t\n]\\|[ \t]*\\(@\\|def[ \t]+\\|class[ \t]+\\)")
   (setq outline-level 'py-outline-level)
   (outline-minor-mode t)
   ;(hide-body)

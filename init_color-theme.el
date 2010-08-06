@@ -11,7 +11,7 @@
 (add-to-list 'load-path (concat "~/.emacs.d/" "color-theme"))
 
 (require 'color-theme)
-(require 'color-theme-autoloads)
+;;(require 'color-theme-autoloads)
 (color-theme-initialize)
 (color-theme-dark-blue2)
 (if window-system
@@ -53,7 +53,7 @@
           
            
      )))
-(my-color-theme-example)
+;;(my-color-theme-example)
 (print "end of set color-theme")
 ;
 ;-------   end of color-theme set---------

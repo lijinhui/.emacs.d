@@ -12,11 +12,12 @@
 (load-file "~/.emacs.d/init_basic.el")
 (load-file "~/.emacs.d/init_auto-complete.el")
 (load-file "~/.emacs.d/init_ack.el")
-(load-file "~/.emacs.d/init_cedet.el")
+;;(load-file "~/.emacs.d/init_cedet.el")
 (load-file "~/.emacs.d/init_python.el")
 
 ;;(load-file "~/.emacs.d/init_company.el")
-(load-file "~/.emacs.d/init_session.el")
+(desktop-save-mode 1)
+;;(load-file "~/.emacs.d/init_session.el")
 
 (load-file "~/.emacs.d/init_org.el")
 ;;(add-to-list 'load-path "~/.emacs.d/company")

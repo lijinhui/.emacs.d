@@ -54,18 +54,18 @@
       #'yas/dropdown-list-popup-for-template)
 
 
-(add-to-list 'load-path "~/.emacs.d/auto-complete/")
+(add-to-list 'load-path "~/.emacs.d/auto-complete-1.3/")
 (require 'auto-complete)
 (require 'auto-complete-config)
-(require 'auto-complete-yasnippet)
-(require 'auto-complete-c)
-(require 'auto-complete-etags)
-(require 'auto-complete-extension)
-(require 'auto-complete-octave)
-(require 'auto-complete-verilog)
-(require 'ac-anything)
+;;(require 'auto-complete-yasnippet)
+;;(require 'auto-complete-c)
+;;(require 'auto-complete-etags)
+;;(require 'auto-complete-extension)
+;;(require 'auto-complete-octave)
+;;(require 'auto-complete-verilog)
+;;(require 'ac-anything)
 ;;(require 'rcodetools)
-(require 'auto-complete+)
+;;(require 'auto-complete+)
 (add-to-list 'ac-modes 'nxml-mode)
 ;;(require 'javascript-mode "javascript")
 ;;(require 'js2-mode)
@@ -149,6 +149,59 @@
   '((t (:background "coral3" :foreground "white"))) 
   "Face for the yasnippet selected candidate.")
 
+(defun ac-ropemacs-action ()
+  (interactive)
+  (rope-show-doc nil)
+  (setq buffer (get-buffer-create "*rope-pydoc*"))
+  (setq rope-snippet "")
+  (save-excursion
+    (let* ((begin (point-min)))
+      (switch-to-buffer buffer)
+      (beginning-of-buffer)
+      (move-end-of-line 1)
+      (setq pydoc (buffer-substring-no-properties begin (point)))
+      ;;(print pydoc)
+      (setq start (string-match "(.*)" pydoc))
+      (when start
+	(setq func-doc (substring pydoc (1+ start) (1- (match-end 0))))
+	(setq  rope-snippet (mapconcat
+			(lambda (arg) (concat "${" arg  "}"))
+			(split-string func-doc ", ?")
+			", "))
+	)
+      (kill-buffer)
+      ))
+  ;;(print rope-snippet)
+  (yas/expand-snippet (concat "(" rope-snippet ")") (point))
+  )
+
+(defun my-ac-rope-document (candidate)
+  (print ac-prefix)
+  (print candidate)
+  (rope-my-get-doc ac-prefix candidate)
+  )
+
+
+(require 'thingatpt)
+
+(defun ac-rope-prefix-find()
+  "Python `ac-find-function'."
+  (interactive)
+  (let ((symbol (car-safe (bounds-of-thing-at-point 'symbol))))
+    (if (null symbol)
+        (if (string= "." (buffer-substring (- (point) 1) (point)))
+            (point)
+          nil)
+      symbol))
+)
+
+(defun ac-clang-prefix ()
+  (or (ac-prefix-symbol)
+      (let ((c (char-before)))
+        (when (or (eq ?\. c)
+                  (and (eq ?> c)
+                       (eq ?- (char-before (1- (point))))))
+          (point)))))
 
 (defvar ac-source-ropemacs
   '((init
@@ -159,16 +212,21 @@
                   (concat ac-prefix completion))
                 (ignore-errors
                   (rope-completions))))
-	 (print "rope-completions:")
-	 (print ac-ropemacs-completions-cache)
-
+	 ;;(print "rope-completions:")
+	 ;;(print ac-ropemacs-completions-cache)
 	 ))
     (candidates . (lambda ()
                     (all-completions ac-prefix ac-ropemacs-completions-cache)))
+
+    (action . ac-ropemacs-action)
+    ;;(document . rope-my-get-doc)
+    (document . my-ac-rope-document)
+    ;;(prefix . ac-clang-prefix)
     (candidate-face . ac-ropemacs-candidate-face)
     (selection-face . ac-ropemacs-selection-face)))
 
 (defun ac-ropemacs-setup ()
+  (interactive)
   (ac-ropemacs-require)
 ;;  (setq ac-sources (append (list 'ac-source-ropemacs) ac-sources))
   (set (make-local-variable 'ac-sources)

@@ -5,7 +5,7 @@ from rope.base import libutils, utils
 from rope.contrib import codeassist, generate, autoimport, findit
 
 from ropemode import refactor, decorators, dialog
-
+from Pymacs import lisp
 
 class RopeMode(object):
 
@@ -165,6 +165,18 @@ class RopeMode(object):
                 return None
             return codeassist.get_calltip(project, text, offset, *args, **kwds)
         self._base_show_doc(prefix, _get_doc)
+
+    @decorators.local_command('a c', 'm')
+    def my_get_doc(self, prefix, candidate):
+        maxfixes = self.env.get('codeassist_maxfixes')
+        text = self._get_text()
+        offset = self.env.get_offset()
+
+        text=text[:offset]+candidate[len(prefix):]+text[offset:]
+        offset += len(candidate) - len(prefix)
+        docs = codeassist.get_doc(self.project, text, offset,
+                       self.resource, maxfixes)
+        return docs  ##or 'no docfor %s text=%s, offset=%s' % (prefix, text, offset)
 
     def _base_show_doc(self, prefix, get_doc):
         maxfixes = self.env.get('codeassist_maxfixes')
