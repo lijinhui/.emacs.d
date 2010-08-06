@@ -57,19 +57,8 @@
 (add-to-list 'load-path "~/.emacs.d/auto-complete-1.3/")
 (require 'auto-complete)
 (require 'auto-complete-config)
-;;(require 'auto-complete-yasnippet)
-;;(require 'auto-complete-c)
-;;(require 'auto-complete-etags)
-;;(require 'auto-complete-extension)
-;;(require 'auto-complete-octave)
-;;(require 'auto-complete-verilog)
-;;(require 'ac-anything)
-;;(require 'rcodetools)
-;;(require 'auto-complete+)
+(setq ac-auto-start t)
 (add-to-list 'ac-modes 'nxml-mode)
-;;(require 'javascript-mode "javascript")
-;;(require 'js2-mode)
-;;(require 'css-mode)
 
 ;; After do this, isearch any string, M-: (match-data) always
 ;; return the list whose elements is integer
@@ -124,8 +113,8 @@
 (autoload 'pymacs-exec "pymacs" nil t)
 (autoload 'pymacs-load "pymacs" nil t)
 
-(pymacs-load "ropemacs" "rope-")
-(setq ropemacs-enable-autoimport t)
+;;(pymacs-load "ropemacs" "rope-")
+;;(setq ropemacs-enable-autoimport t)
 
 
 
@@ -139,6 +128,7 @@
     (setq ropemacs-enable-autoimport t)
     (setq ac-ropemacs-loaded t)))
 
+(print "ac-source-rope")
 (defvar ac-ropemacs-completions-cache nil)
 
 (defface ac-ropemacs-candidate-face
@@ -176,32 +166,60 @@
   )
 
 (defun my-ac-rope-document (candidate)
-  (print ac-prefix)
-  (print candidate)
+  (print (format "ac-prefix=%s, candidate=%s" ac-prefix  candidate))
   (rope-my-get-doc ac-prefix candidate)
   )
 
 
 (require 'thingatpt)
 
-(defun ac-rope-prefix-find()
-  "Python `ac-find-function'."
+(defun my-python-symbol ()
+  "thisandthat."
   (interactive)
-  (let ((symbol (car-safe (bounds-of-thing-at-point 'symbol))))
-    (if (null symbol)
-        (if (string= "." (buffer-substring (- (point) 1) (point)))
-            (point)
-          nil)
-      symbol))
-)
+  (let* ((bol (point-at-bol))
+	 (start (point-at-bol))
+	 (end (point))
+	 (result (point))
+	 (prefix ""))
+    
+    (while (< start end)
+      (let* ((str (buffer-substring-no-properties start end)))
+	;;(print (format "%s:%s %s" start end str))
+	(string-match  "[_a-zA-Z][_.0-9a-zA-Z]*" str)
+	(if (equal (- (match-end 0) (match-beginning 0))
+		 (- end start))
+	  (progn
+	    (setq prefix (buffer-substring-no-properties start end))
+	    (print prefix)
+	    (setq result start)
+	    (setq start end))
+	  (setq start (1+ start))
 
-(defun ac-clang-prefix ()
-  (or (ac-prefix-symbol)
-      (let ((c (char-before)))
-        (when (or (eq ?\. c)
-                  (and (eq ?> c)
-                       (eq ?- (char-before (1- (point))))))
-          (point)))))
+	  )))
+    result))
+
+
+
+(ac-define-prefix 'python-prefix-dot 'my-python-symbol)
+;;(ac-define-prefix 'rope-prefix-find 'ac-rope-prefix-find)
+;;(ac-define-prefix 'prefix-bol 'point-at-bol)
+
+(defun ac-rope-candidates-func ()
+  "thisandthat."
+  (interactive)
+  (progn 
+    (if (string= "." (buffer-substring (- (point) 1) (point)))
+	(setq ac-ropemacs-completions-cache
+	      (mapcar
+	       (lambda (completion)
+		 (concat ac-prefix completion))
+	       (ignore-errors
+		 (rope-completions)))))
+    (print "cache:::::::::")
+    (print ac-prefix)
+    (print (all-completions ac-prefix ac-ropemacs-completions-cache))
+    (all-completions ac-prefix ac-ropemacs-completions-cache)
+    ))
 
 (defvar ac-source-ropemacs
   '((init
@@ -215,13 +233,14 @@
 	 ;;(print "rope-completions:")
 	 ;;(print ac-ropemacs-completions-cache)
 	 ))
-    (candidates . (lambda ()
-                    (all-completions ac-prefix ac-ropemacs-completions-cache)))
-
+    (candidates . ac-rope-candidates-func)
     (action . ac-ropemacs-action)
     ;;(document . rope-my-get-doc)
     (document . my-ac-rope-document)
-    ;;(prefix . ac-clang-prefix)
+    (prefix . python-prefix-dot)
+    ;(prefix . rope-prefix-find)
+    ;(prefix . prefix-bol)
+    (limit . 500)
     (candidate-face . ac-ropemacs-candidate-face)
     (selection-face . ac-ropemacs-selection-face)))
 
@@ -230,7 +249,7 @@
   (ac-ropemacs-require)
 ;;  (setq ac-sources (append (list 'ac-source-ropemacs) ac-sources))
   (set (make-local-variable 'ac-sources)
-       (append ac-sources '(ac-source-ropemacs) ))
+       '(ac-source-ropemacs ac-source-words-in-same-mode-buffers) )
   (setq ac-omni-completion-sources '(("\\." ac-source-ropemacs))))
 
 (defun ac-ropemacs-init ()

@@ -875,6 +875,9 @@ You can not use it in source definition like (prefix . `NAME')."
          (selection-face (assoc-default 'selection-face source))
          (cache (and do-cache (assq source ac-candidates-cache)))
          (candidates (cdr cache)))
+
+    ;;(print cache)
+    ;;(print function)
     (unless cache
       (setq candidates (save-excursion
                          (cond
@@ -882,6 +885,7 @@ You can not use it in source definition like (prefix . `NAME')."
                            (funcall function))
                           (t
                            (eval function)))))
+      ;;(print candidates)
       ;; Convert (name value) format candidates into name with text properties.
       (setq candidates (mapcar (lambda (candidate)
                                  (if (consp candidate)
@@ -1061,7 +1065,7 @@ that have been made before in this function."
 
 (defun ac-set-timer ()
   (unless ac-timer
-    (setq ac-timer (run-with-idle-timer ac-delay ac-delay 'ac-update-greedy))))
+    (setq ac-timer (run-with-idle-timer ac-delay ac-delay 'ac-update-greedy t))))
 
 (defun ac-cancel-timer ()
   (when (timerp ac-timer)
@@ -1075,6 +1079,10 @@ that have been made before in this function."
                  force)
              (not isearch-mode))
     (ac-put-prefix-overlay)
+    ;;(print (format "prefix=%s" ac-prefix))
+    ;;(print "ac-updateXXXXXXXXXXXXX")
+    ;;(print ac-candidates)
+
     (setq ac-candidates (ac-candidates))
     (let ((preferred-width (popup-preferred-width ac-candidates)))
       ;; Reposition if needed
@@ -1386,8 +1394,10 @@ that have been made before in this function."
               ac-current-prefix-def prefix-def)
         (when (or init (null ac-prefix-overlay))
           (ac-init))
-        (ac-set-timer)
-        (ac-set-show-menu-timer)
+	(ac-update-greedy t)
+        ;;(ac-set-timer)
+	(ac-show-menu)
+        ;;(ac-set-show-menu-timer)
         (ac-set-quick-help-timer)
         (ac-put-prefix-overlay)))))
 
