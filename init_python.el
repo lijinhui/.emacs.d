@@ -64,6 +64,7 @@
   (outline-minor-mode t)
   ;(hide-body)
   (show-paren-mode 1)
+  (highlight-symbol-mode t)
 
   (define-key py-mode-map (kbd "C-c h h") 'hide-entry)
   (define-key py-mode-map (kbd "C-c h s") 'show-entry)

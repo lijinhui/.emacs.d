@@ -116,7 +116,12 @@
 ;;(pymacs-load "ropemacs" "rope-")
 ;;(setq ropemacs-enable-autoimport t)
 
-
+(defun restart-pymacs ()
+   "thisandthat."
+   (interactive)
+   (kill-process "*Pymacs*")
+   (pymacs-load "ropemacs" "rope-")
+   )
 
 (defvar ac-ropemacs-loaded nil)
 (defun ac-ropemacs-require ()
@@ -141,32 +146,36 @@
 
 (defun ac-ropemacs-action ()
   (interactive)
-  (rope-show-doc nil)
-  (setq buffer (get-buffer-create "*rope-pydoc*"))
-  (setq rope-snippet "")
-  (save-excursion
-    (let* ((begin (point-min)))
-      (switch-to-buffer buffer)
-      (beginning-of-buffer)
-      (move-end-of-line 1)
-      (setq pydoc (buffer-substring-no-properties begin (point)))
-      ;;(print pydoc)
-      (setq start (string-match "(.*)" pydoc))
-      (when start
-	(setq func-doc (substring pydoc (1+ start) (1- (match-end 0))))
-	(setq  rope-snippet (mapconcat
-			(lambda (arg) (concat "${" arg  "}"))
-			(split-string func-doc ", ?")
-			", "))
-	)
-      (kill-buffer)
-      ))
+  (setq calltip (rope-my-get-calltip t))
+  ;;(print (format "calltip=%s" calltip))
+  (when (and calltip (string-match "(.*)" calltip))
+    (setq func-doc (substring calltip (1+ (match-beginning 0)) (1- (match-end 0))))
+    (setq rope-snippet
+	  (replace-regexp-in-string
+	   ;; 1                2  3           4                                      5
+	   "\\([_.a-zA-Z]+\\)\\(\\( *= *\\)?\\(\\(?:\".*\"\\)\\|\\(?:[^,]+\\)\\)\\)?\\(,?\\)"
+	   "${\\1\\3${\\4}}\\5"
+	   func-doc ))
+    (setq rope-snippet
+	  (replace-regexp-in-string
+	   "\\([_.a-zA-Z]+\\) *= *\\(\\(?:\".*\"\\)\\|\\(?:[^,]+\\)\\)"
+	   "\\1 = \\2"
+	   ;;"topdown=True, onerror=None, followlinks=False"
+	   rope-snippet
+	   ))
+    (setq snippet
+	  (replace-regexp-in-string
+	   "${}"
+	   ""
+	   rope-snippet
+	   ))
   ;;(print rope-snippet)
-  (yas/expand-snippet (concat "(" rope-snippet ")") (point))
+    (yas/expand-snippet (concat "(" rope-snippet ")") (point))
   )
+)
 
 (defun my-ac-rope-document (candidate)
-  (print (format "ac-prefix=%s, candidate=%s" ac-prefix  candidate))
+  ;;;(print (format "ac-prefix=%s, candidate=%s" ac-prefix  candidate))
   (rope-my-get-doc ac-prefix candidate)
   )
 
@@ -190,7 +199,7 @@
 		 (- end start))
 	  (progn
 	    (setq prefix (buffer-substring-no-properties start end))
-	    (print prefix)
+	    ;;;(print (format "%s:%s" prefix start))
 	    (setq result start)
 	    (setq start end))
 	  (setq start (1+ start))
@@ -215,13 +224,13 @@
 		 (concat ac-prefix completion))
 	       (ignore-errors
 		 (rope-completions)))))
-    (print "cache:::::::::")
-    (print ac-prefix)
-    (print (all-completions ac-prefix ac-ropemacs-completions-cache))
+    ;;;(print "cache:::::::::")
+    ;;;(print ac-prefix)
+    ;;;(print (all-completions ac-prefix ac-ropemacs-completions-cache))
     (all-completions ac-prefix ac-ropemacs-completions-cache)
     ))
 
-(defvar ac-source-ropemacs
+(defvar my-ac-source-ropemacs
   '((init
      . (lambda ()
          (setq ac-ropemacs-completions-cache
@@ -244,12 +253,13 @@
     (candidate-face . ac-ropemacs-candidate-face)
     (selection-face . ac-ropemacs-selection-face)))
 
+
 (defun ac-ropemacs-setup ()
   (interactive)
   (ac-ropemacs-require)
 ;;  (setq ac-sources (append (list 'ac-source-ropemacs) ac-sources))
   (set (make-local-variable 'ac-sources)
-       '(ac-source-ropemacs ac-source-words-in-same-mode-buffers) )
+       '(my-ac-source-ropemacs ac-source-words-in-all-buffer) )
   (setq ac-omni-completion-sources '(("\\." ac-source-ropemacs))))
 
 (defun ac-ropemacs-init ()

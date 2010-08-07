@@ -178,6 +178,17 @@ class RopeMode(object):
                        self.resource, maxfixes)
         return docs  ##or 'no docfor %s text=%s, offset=%s' % (prefix, text, offset)
 
+    @decorators.local_command('a c', 't')
+    def my_get_calltip(self, prefix):
+        self._check_project()
+        maxfixes = self.env.get('codeassist_maxfixes')
+        text = self._get_text()
+        offset = self.env.get_offset()
+        docs = codeassist.get_calltip(self.project, text, offset,
+                       self.resource, maxfixes, remove_self = True)
+        return docs
+
+
     def _base_show_doc(self, prefix, get_doc):
         maxfixes = self.env.get('codeassist_maxfixes')
         text = self._get_text()

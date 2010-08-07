@@ -94,7 +94,7 @@
 ;;lines-tail 只标识长度超过配置长度的部分
 (setq whitespace-style  '(tabs tab-mark trailing lines-tail ))
 (setq whitespace-tab 'whitespace-line)
-(global-whitespace-mode)
+;;(global-whitespace-mode)
 
 
 

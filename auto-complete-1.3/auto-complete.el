@@ -163,9 +163,9 @@
   '(emacs-lisp-mode
     lisp-interaction-mode
     c-mode cc-mode c++-mode
-    java-mode clojure-mode scala-mode
+    java-mode malabar-mode clojure-mode scala-mode
     scheme-mode
-    ocaml-mode tuareg-mode
+    ocaml-mode tuareg-mode haskell-mode
     perl-mode cperl-mode python-mode ruby-mode
     ecmascript-mode javascript-mode js-mode js2-mode php-mode css-mode
     makefile-mode sh-mode fortran-mode f90-mode ada-mode
@@ -470,8 +470,9 @@ If there is no common part, this will be nil.")
                 (loop for p from 0 below (length string)
                       ;; sigmoid function
                       with a = 5
+                      with b = (/ 700.0 a) ; bounds for avoiding range error in `exp'
                       with d = (/ 6.0 a)
-                      for x = (- d (abs (- prefix p)))
+                      for x = (max (- b) (min b (- d (abs (- prefix p)))))
                       for r = (/ 1.0 (1+ (exp (* (- a) x))))
                       do
                       (incf score (* (aref stat p) r))))
@@ -875,9 +876,6 @@ You can not use it in source definition like (prefix . `NAME')."
          (selection-face (assoc-default 'selection-face source))
          (cache (and do-cache (assq source ac-candidates-cache)))
          (candidates (cdr cache)))
-
-    ;;(print cache)
-    ;;(print function)
     (unless cache
       (setq candidates (save-excursion
                          (cond
@@ -885,7 +883,6 @@ You can not use it in source definition like (prefix . `NAME')."
                            (funcall function))
                           (t
                            (eval function)))))
-      ;;(print candidates)
       ;; Convert (name value) format candidates into name with text properties.
       (setq candidates (mapcar (lambda (candidate)
                                  (if (consp candidate)
@@ -1065,7 +1062,7 @@ that have been made before in this function."
 
 (defun ac-set-timer ()
   (unless ac-timer
-    (setq ac-timer (run-with-idle-timer ac-delay ac-delay 'ac-update-greedy t))))
+    (setq ac-timer (run-with-idle-timer ac-delay ac-delay 'ac-update-greedy))))
 
 (defun ac-cancel-timer ()
   (when (timerp ac-timer)
@@ -1079,10 +1076,6 @@ that have been made before in this function."
                  force)
              (not isearch-mode))
     (ac-put-prefix-overlay)
-    ;;(print (format "prefix=%s" ac-prefix))
-    ;;(print "ac-updateXXXXXXXXXXXXX")
-    ;;(print ac-candidates)
-
     (setq ac-candidates (ac-candidates))
     (let ((preferred-width (popup-preferred-width ac-candidates)))
       ;; Reposition if needed
@@ -1394,10 +1387,8 @@ that have been made before in this function."
               ac-current-prefix-def prefix-def)
         (when (or init (null ac-prefix-overlay))
           (ac-init))
-	(ac-update-greedy t)
-        ;;(ac-set-timer)
-	(ac-show-menu)
-        ;;(ac-set-show-menu-timer)
+        (ac-set-timer)
+        (ac-set-show-menu-timer)
         (ac-set-quick-help-timer)
         (ac-put-prefix-overlay)))))
 
