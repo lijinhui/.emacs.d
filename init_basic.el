@@ -35,7 +35,9 @@
 (setq sentence-end "\\([。！？]\\|……\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
 (setq sentence-end-double-space nil)
 (transient-mark-mode t);;高亮显示要拷贝的区域
-(tool-bar-mode -1);;调整工具条的模式(在不在顶栏显示工具栏图标) 1表示显示 -1表示不显示
+(when (window-system)
+  (tool-bar-mode -1);;调整工具条的模式(在不在顶栏显示工具栏图标) 1表示显示 -1表示不显示
+)
 (setq x-select-enable-clipboard t) ;支持emacs和外部程序的粘贴
 (setq tab-width 4)
 ;;alt + arrow to switch windows

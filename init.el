@@ -1,7 +1,11 @@
 (require 'ido)
 (require 'ibuffer)
 (ido-mode t)
-(tool-bar-mode -1)
+
+(when (window-system)
+  (tool-bar-mode -1);;调整工具条的模式(在不在顶栏显示工具栏图标) 1表示显示 -1表示不显示
+)
+
 
 (put 'dired-find-alternate-file 'disabled nil)
 (add-to-list 'load-path "~/.emacs.d/els")
@@ -12,6 +16,7 @@
 (load-file "~/.emacs.d/init_basic.el")
 (load-file "~/.emacs.d/init_auto-complete.el")
 (load-file "~/.emacs.d/init_ack.el")
+(load-file "~/.emacs.d/init_magit.el")
 ;;(load-file "~/.emacs.d/init_cedet.el")
 (load-file "~/.emacs.d/init_python.el")
 
@@ -32,6 +37,9 @@
  ;; Shift + scroll to change font size
 (global-set-key [C-mouse-4] 'text-scale-increase)
 (global-set-key [C-mouse-5] 'text-scale-decrease)
+(global-set-key (kbd "<select>") 'end-of-line)
+
+
 ;;;cursor type
 (setq default-cursor-type 'box)
 (blink-cursor-mode)
@@ -114,11 +122,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(column-number-mode t)
- '(display-time-mode t)
- '(ecb-layout-window-sizes (quote (("leftright-analyse" (ecb-directories-buffer-name 0.12666666666666668 . 0.3902439024390244) (ecb-sources-buffer-name 0.12666666666666668 . 0.2926829268292683) (ecb-history-buffer-name 0.12666666666666668 . 0.2926829268292683) (ecb-methods-buffer-name 0.14 . 0.6097560975609756) (ecb-analyse-buffer-name 0.14 . 0.36585365853658536)))))
- '(show-paren-mode t)
- '(tabbar-mode t))
+ '(org-agenda-files nil))
 
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
@@ -127,6 +131,4 @@
   ;; If there is more than one, they won't work right.
  '(my-long-line-face ((((class color)) (:background "red"))) t)
  '(my-tab-face ((((class color)) (:background "grey10"))) t)
- '(my-trailing-space-face ((((class color)) (:background "red"))) t)
- '(tabbar-selected-face ((t (:inherit tabbar-default-face :background "black" :foreground "green" :box (:line-width 2 :color "white" :style released-button)))))
- '(tabbar-unselected-face ((t (:inherit tabbar-default-face :foreground "black" :box (:line-width 2 :color "white" :style pressed-button))))))
+ '(my-trailing-space-face ((((class color)) (:background "red"))) t))

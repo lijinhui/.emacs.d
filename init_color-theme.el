@@ -16,8 +16,6 @@
 (color-theme-dark-blue2)
 (if window-system
     (color-theme-deep-blue)
-  (color-theme-dark-blue2)
-  ;;(color-theme-charcoal-black)
 )
 ;;(color-theme-comidia)
 ;;(set-face-background 'default "LightCyan3") ;;设置背景色为 浅青色3
