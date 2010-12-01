@@ -1,22 +1,34 @@
-;;(defun my-highlith-bad-style ()
-;;  (interactive)
-;;  (hi-lock-line-face-buffer "\\t+" 'my-tab-face)
-;;  (hi-lock-line-face-buffer "^.\\{101,\\}$" 'my-long-line-face)
-;;  (hi-lock-line-face-buffer "[ \\t]+$" 'my-trailing-space-face )
-;;  )
-
-	
-
 
 (require 'pylint)
 ;; Configure flymake for python
 (when (load "flymake" t)
+  (defun my-python-flymake-temp-file (file-name prefix)
+    (unless (stringp file-name)
+      (error "Invalid file-name"))
+
+    (let* ((dir (file-name-directory file-name))
+	   ;; Not sure what this slash-pos is all about, but I guess it's just
+	   ;; trying to remove the leading / of absolute file names.
+	   (slash-pos (string-match "/" dir))
+	   (temp-dir  (expand-file-name (substring dir (1+ slash-pos))
+					;;(flymake-get-temp-dir)
+					)))
+      (concat "/home/lijinhui/python_flymake" 
+	  
+	      (file-truename (expand-file-name (file-name-nondirectory file-name)
+					       ;;temp-dir
+					       )))
+    ))
   (defun flymake-pylint-init ()
     (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                       'flymake-create-temp-inplace))
+                       ;'flymake-create-temp-inplace
+		       ;'flymake-create-temp-with-folder-structure
+		       'my-python-flymake-temp-file
+		       ))
            (local-file (file-relative-name
                         temp-file
                         (file-name-directory buffer-file-name))))
+      (print local-file)
       (list "epylint" (list local-file))))
 
   (add-to-list 'flymake-allowed-file-name-masks
@@ -141,3 +153,18 @@ it)"
 ;;     '(flymake-errline ((((class color)) (:underline "red"))))
 ;;     '(flymake-warnline ((((class color)) (:underline "yellow1")))))
 (setq flymake-no-changes-timeout 600)
+
+
+
+
+(defun py-execute-buffer()
+  (interactive)
+  (setq cmd (concat "python " (buffer-file-name)))
+  (setq buf (get-buffer-create "*PYTHON-RUN*"))
+  (setq cmd (read-string "run:" cmd))
+  (when (length cmd)
+    (shell-command cmd buf buf)
+    (when (> (with-current-buffer buf (point-max)) 1)
+      (switch-to-buffer-other-window buf))
+    )
+)
