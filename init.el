@@ -105,7 +105,43 @@
 ;;(global-whitespace-mode)
 
 
+(defun csv-to-org-table ()
+  (interactive)
+  (save-excursion
+    (mark-whole-buffer)
+    (replace-regexp "^|?\\|," "|" ),
+    (org-mode)
+    )
+  )
 
+
+
+;;;;hs-minor-mode
+(require 'outline)
+(define-key global-map (kbd "C-c h h") 'hide-entry)
+(define-key global-map (kbd "C-c h s") 'show-entry)
+(define-key global-map (kbd "C-c h k") 'hide-entry)
+(define-key global-map (kbd "C-c h j") 'show-entry)
+(define-key global-map (kbd "C-c h a") 'show-all)
+(define-key global-map (kbd "C-c h b") 'hide-body)
+
+
+;;utils
+(defun sort-words (reverse beg end)
+      "Sort words in region alphabetically, in REVERSE if negative.
+    Prefixed with negative \\[universal-argument], sorts in reverse.
+    The variable `sort-fold-case' determines whether alphabetic case
+    affects the sort order.
+    See `sort-regexp-fields'."
+      (interactive "*P\nr")
+      (sort-regexp-fields reverse "\\w+" "\\&" beg end))
+
+
+(defun sort-symbols (reverse beg end)
+      "Sort symbols in region alphabetically, in REVERSE if negative.
+    See `sort-words'."
+      (interactive "*P\nr")
+      (sort-regexp-fields reverse "\\(\\sw\\|\\s_\\)+" "\\&" beg end))
 
 
 ;;; seting gbk

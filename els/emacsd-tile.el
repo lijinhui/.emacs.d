@@ -14,6 +14,13 @@
         (set-window-start  this-window  other-start)
         (set-window-start  other-window this-start)))))
 
+
+(defun my-switch-previous-buffer ()
+  (interactive)
+  (switch-to-buffer (last-buffer (current-buffer)))
+)
+
+
 (global-set-key (kbd "C-M-J") (lambda () (interactive) (swap-with 'down)))
 (global-set-key (kbd "C-M-K") (lambda () (interactive) (swap-with 'up)))
 (global-set-key (kbd "C-M-H") (lambda () (interactive) (swap-with 'left)))
@@ -25,7 +32,7 @@
 (global-set-key (kbd "M-L") (lambda () (interactive) (enlarge-window 1 t)))
 
 (global-set-key (kbd "M-j") 'next-buffer)
-(global-set-key (kbd "M-k") 'previous-buffer)
+(global-set-key (kbd "M-k") 'my-switch-previous-buffer)
 (global-set-key (kbd "M-h") 'windmove-left)
 (global-set-key (kbd "M-l") 'windmove-right)
 

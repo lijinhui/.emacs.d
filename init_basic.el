@@ -588,6 +588,7 @@
 
 (setq auto-mode-alist
       (append '(("\\.rst$" . rst-mode)
+		("\\.cs$" . c++-mode)
                 ("\\.txt$" . rst-mode)) auto-mode-alist))
 
 (setq django-doc-root "e:/software/django/docs/")
