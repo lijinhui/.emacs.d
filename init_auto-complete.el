@@ -112,6 +112,18 @@
 (autoload 'pymacs-eval "pymacs" nil t)
 (autoload 'pymacs-exec "pymacs" nil t)
 (autoload 'pymacs-load "pymacs" nil t)
+(defun my-rope-goto-definition-other-window()
+  (interactive)
+  (let ((buffer (current-buffer) )(line (line-number-at-pos)))
+    (progn (rope-goto-definition)
+	   (unless (equal buffer (current-buffer))
+	     (let ((new-buffer (current-buffer))
+		   (new-pos (point))
+		   )
+	       (switch-to-buffer buffer)
+	       (switch-to-buffer-other-window new-buffer)
+	       (goto-char new-pos))))))
+
 
 ;;(pymacs-load "ropemacs" "rope-")
 ;;(setq ropemacs-enable-autoimport t)
@@ -131,7 +143,8 @@
         (setq ropemacs-global-prefix nil))
     (pymacs-load "ropemacs" "rope-")
     (setq ropemacs-enable-autoimport t)
-    (setq ac-ropemacs-loaded t)))
+    (setq ac-ropemacs-loaded t)
+    (define-key ropemacs-local-keymap (kbd "C-c C-g") 'my-rope-goto-definition-other-window)))
 
 (print "ac-source-rope")
 (defvar ac-ropemacs-completions-cache nil)

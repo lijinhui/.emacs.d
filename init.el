@@ -6,6 +6,21 @@
   (tool-bar-mode -1);;调整工具条的模式(在不在顶栏显示工具栏图标) 1表示显示 -1表示不显示
 )
 
+;;;backup
+(setq backup-directory-alist `((".*" . "/home/lijinhui/.emacs.backup"))
+      backup-by-copying t
+      make-backup-files t
+      version-control t ;; Use version numbers for backups
+      kept-new-versions 100 ;; Number of newest versions to keep
+      kept-old-versions 80 ;; Number of oldest versions to keep
+      delete-old-versions t ;; Ask to delete excess backup versions?
+      backup-by-copying-when-linked t) ;; Copy linked files, don't rename.
+
+(defun force-backup-of-buffer ()
+  (let ((buffer-backed-up nil))
+    (backup-buffer)))
+
+(add-hook 'before-save-hook  'force-backup-of-buffer)
 
 (put 'dired-find-alternate-file 'disabled nil)
 (add-to-list 'load-path "~/.emacs.d/els")
@@ -19,12 +34,16 @@
 (load-file "~/.emacs.d/init_magit.el")
 ;;(load-file "~/.emacs.d/init_cedet.el")
 (load-file "~/.emacs.d/init_python.el")
+(load-file "~/.emacs.d/init_ibuffer.el")
+(load-file "~/.emacs.d/init_gtags.el")
+
 
 ;;(load-file "~/.emacs.d/init_company.el")
 (desktop-save-mode 1)
 ;;(load-file "~/.emacs.d/init_session.el")
 
 (load-file "~/.emacs.d/init_org.el")
+(load-file "~/.emacs.d/init_ess.el")
 ;;(add-to-list 'load-path "~/.emacs.d/company")
 (require 'smart-operator)
 
@@ -58,12 +77,23 @@
   (interactive)
   (when (file-exists-p (buffer-file-name)) (view-mode))
   )
+(defun my-org-current-file-link () 
+  (interactive)
+  (let ((link (format "[[file:%s::%d]]" (buffer-file-name) (line-number-at-pos))))
+    (unless (equal (car kill-ring) link)
+      (kill-new link)
+    )))
+
 (eval-after-load "view"
   '(let ((map view-mode-map))
      (define-key map "h" 'backward-char)
-     (define-key map "l" 'forward-char)
      (define-key map "j" 'next-line)
-     (define-key map "k" 'previous-line))
+     (define-key map "k" 'previous-line)
+     (define-key map "l" 'dired-jump)
+     (define-key map "i" 'View-quit)
+     (define-key map "n" (lambda () (interactive) (kill-buffer (current-buffer))))
+     (define-key map "f" 'my-org-current-file-link)
+     )
   )
 (add-hook 'find-file-hook 'my-find-file-exist-view-mode)
 
@@ -118,12 +148,21 @@
 
 ;;;;hs-minor-mode
 (require 'outline)
+(require 'hideshow)
 (define-key global-map (kbd "C-c h h") 'hide-entry)
 (define-key global-map (kbd "C-c h s") 'show-entry)
 (define-key global-map (kbd "C-c h k") 'hide-entry)
 (define-key global-map (kbd "C-c h j") 'show-entry)
 (define-key global-map (kbd "C-c h a") 'show-all)
 (define-key global-map (kbd "C-c h b") 'hide-body)
+(define-key hs-minor-mode-map (kbd "C-c h k")    'hs-hide-block)
+(define-key hs-minor-mode-map (kbd "C-c h j")    'hs-show-block)
+(define-key hs-minor-mode-map (kbd "C-c h a")    'hs-hide-all)
+(define-key hs-minor-mode-map (kbd "C-c h s")    'hs-show-all)
+(define-key hs-minor-mode-map (kbd "C-c h l")    'hs-hide-level)
+(define-key hs-minor-mode-map (kbd "C-c h h")    'hs-toggle-hiding)
+(define-key hs-minor-mode-map (kbd "M-h h")    'hs-toggle-hiding)
+(define-key hs-minor-mode-map (kbd "M-h M-h")    'hs-toggle-hiding)
 
 
 ;;utils
@@ -168,3 +207,8 @@
  '(my-long-line-face ((((class color)) (:background "red"))) t)
  '(my-tab-face ((((class color)) (:background "grey10"))) t)
  '(my-trailing-space-face ((((class color)) (:background "red"))) t))
+
+
+
+;;;;--------------trival
+(load-file "~/.emacs.d/init_twitter.el")

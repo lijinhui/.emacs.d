@@ -3,4 +3,4 @@
 (require 'highlight-symbol)
 (global-set-key (kbd "M-n") 'highlight-symbol-next)
 (global-set-key (kbd "M-p") 'highlight-symbol-prev)
-;;(add-hook 'find-file-hook 'highlight-symbol-mode)
+(add-hook 'cc-mode-hook 'highlight-symbol-mode)

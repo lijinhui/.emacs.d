@@ -146,8 +146,6 @@ it)"
 ;;(remove-hook 'find-file-hook 'flymake-find-file-hook)
 ;;;(load-library "flymake-cursor")  ;在minibuffer显示错误信息
 (global-set-key (kbd "<f11>") 'flymake-start-syntax-check)
-(global-set-key (kbd "<s-up>") 'flymake-goto-prev-error)
-(global-set-key (kbd "<s-down>") 'flymake-goto-next-error)
 
 ;;(custom-set-faces
 ;;     '(flymake-errline ((((class color)) (:underline "red"))))

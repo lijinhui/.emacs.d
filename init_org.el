@@ -43,10 +43,10 @@
 
 
 ;;;中文字体表格对齐
-;;;(if (and (fboundp 'daemonp) (daemonp))
-;;;    (add-hook 'after-make-frame-functions
-;;;              (lambda (frame)
-;;;                (with-selected-frame frame
-;;;                  (set-fontset-font "fontset-default"
-;;;                                    'chinese-gbk "WenQuanYi Micro Hei Mono 15"))))
-;;;  (set-fontset-font "fontset-default" 'chinese-gbk "WenQuanYi Micro Hei Mono 15"))
+(if (and (fboundp 'daemonp) (daemonp))
+    (add-hook 'after-make-frame-functions
+              (lambda (frame)
+                (with-selected-frame frame
+                  (set-fontset-font "fontset-default"
+                                    'chinese-gbk "WenQuanYi Micro Hei Mono 15"))))
+  (set-fontset-font "fontset-default" 'chinese-gbk "WenQuanYi Micro Hei Mono 15"))
