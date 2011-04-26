@@ -1,0 +1,10 @@
+strlimcpy.o: strlimcpy.c ../config.h die.h \
+ /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h strlimcpy.h
+
+../config.h:
+
+die.h:
+
+/usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h:
+
+strlimcpy.h:

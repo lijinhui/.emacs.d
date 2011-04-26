@@ -1,0 +1,5 @@
+is_unixy.o: is_unixy.c ../config.h is_unixy.h
+
+../config.h:
+
+is_unixy.h:
