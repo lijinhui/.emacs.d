@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: for wrap
+# --
+for ${1:var} in ${2:$$(yas/choose-value '("abcd" "1234" "asdf09090"))}:$0
+    `yas/selected-text`

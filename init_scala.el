@@ -6,3 +6,6 @@
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
 (setq ac-candidate-limit 500)
+
+(setenv "PATH" (concat "~/software/scala-2.8.1.final/bin/:" (getenv "PATH")))
+(setq scala-interpreter "~/software/scala-2.8.1.final/bin/scala")
