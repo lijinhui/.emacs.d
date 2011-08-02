@@ -33,7 +33,7 @@
 
 (global-set-key (kbd "M-j") 'next-buffer)
 (global-set-key (kbd "M-k") 'my-switch-previous-buffer)
-(global-set-key (kbd "M-h") 'windmove-left)
-(global-set-key (kbd "M-l") 'windmove-right)
+;(global-set-key (kbd "M-h") 'windmove-left)
+;(global-set-key (kbd "M-l") 'windmove-right)
 
 (provide 'emacsd-tile)

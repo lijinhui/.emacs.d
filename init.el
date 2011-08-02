@@ -1,7 +1,7 @@
 (require 'ido)
 (require 'ibuffer)
 (ido-mode t)
-
+(set-default 'indent-tabs-mode nil)
 (when (window-system)
   (tool-bar-mode -1);;调整工具条的模式(在不在顶栏显示工具栏图标) 1表示显示 -1表示不显示
 )
@@ -36,6 +36,7 @@
 (load-file "~/.emacs.d/init_python.el")
 (load-file "~/.emacs.d/init_ibuffer.el")
 (load-file "~/.emacs.d/init_gtags.el")
+(load-file "~/.emacs.d/init_mysql.el")
 
 
 ;;(load-file "~/.emacs.d/init_company.el")
@@ -84,6 +85,13 @@
       (kill-new link)
     )))
 
+(defun my-org-current-file-link2 () 
+  (interactive)
+  (let ((link (buffer-file-name)))
+    (unless (equal (car kill-ring) link)
+      (kill-new link)
+    )))
+
 (eval-after-load "view"
   '(let ((map view-mode-map))
      (define-key map "h" 'backward-char)
@@ -92,7 +100,9 @@
      (define-key map "l" 'dired-jump)
      (define-key map "i" 'View-quit)
      (define-key map "n" (lambda () (interactive) (kill-buffer (current-buffer))))
-     (define-key map "f" 'my-org-current-file-link)
+     (define-key map "F" 'my-org-current-file-link)
+     (define-key map "f" 'my-org-current-file-link2)
+
      )
   )
 (add-hook 'find-file-hook 'my-find-file-exist-view-mode)
@@ -165,6 +175,22 @@
 (define-key hs-minor-mode-map (kbd "M-h M-h")    'hs-toggle-hiding)
 
 
+;;;programming
+(defun my-extract-retion-to-variale (begin end)
+  (interactive "r")
+  (let ((old (buffer-substring begin end))
+        )
+
+    (progn
+      (setq var (read-string (concat "extract " old  " to new var :") "" nil "temp" ))
+      (message (concat var "|" old))
+      (kill-new (concat var " = " (delete-and-extract-region begin end)))
+      (insert var)
+      )))
+
+(global-set-key (kbd "C-c C-SPC") 'my-extract-retion-to-variale)
+
+
 ;;utils
 (defun sort-words (reverse beg end)
       "Sort words in region alphabetically, in REVERSE if negative.
@@ -211,4 +237,58 @@
 
 
 ;;;;--------------trival
-(load-file "~/.emacs.d/init_twitter.el")
+;;(load-file "~/.emacs.d/init_twitter.el")
+(defun my-copy-to-buffer()
+  (interactive)
+  (let ((line (buffer-substring (line-beginning-position) (line-beginning-position 2))))
+    (append-to-buffer 
+     (get-buffer-create "top_kws") 
+     (line-beginning-position)
+     (+ 1 (line-end-position)))
+    )
+  )
+
+(global-set-key (kbd "<f12>") 'my-copy-to-buffer)
+
+
+
+(defun my-search-mysql-wc()
+  (interactive)
+  (let ((kw (thing-at-point 'word)) (buf (current-buffer)) (bounds (bounds-of-thing-at-point 'word)))
+    (progn
+      (kill-ring-save (car bounds) (cdr bounds))
+      (switch-to-buffer-other-window ;"*SQL: adgaga/sogou*"
+       "*SQL: adgaga/adgaga*"
+       )
+      (end-of-buffer)
+      (insert (concat ;"select sum(cnt) from kw_wc where kw like 'W_%" kw "%' ;  "
+                      ;"select kw,sum(cnt) as cnt from kw_wc where kw like 'W_%" kw  "%' group by kw order by cnt desc limit 10;"
+               "select id,`name`,keyword,status,parent_id from tag where name like '%" kw "%';"
+                      ))
+      (comint-send-input)
+      (switch-to-buffer-other-window buf)
+      
+      )
+    )
+  )
+
+(global-set-key (kbd "<f12>") 'my-search-mysql-wc)
+
+(defun get-buffers-matching-mode (mode)
+  "Returns a list of buffers where their major-mode is equal to MODE"
+  (let ((buffer-mode-matches '()))
+   (dolist (buf (buffer-list))
+     (with-current-buffer buf
+       (if (eq mode major-mode)
+           (add-to-list 'buffer-mode-matches buf))))
+   buffer-mode-matches))
+ 
+(defun multi-occur-in-this-mode ()
+  "Show all lines matching REGEXP in buffers with this major mode."
+  (interactive)
+  (multi-occur
+   (get-buffers-matching-mode major-mode)
+   (car (occur-read-primary-args))))
+ 
+;; global key for `multi-occur-in-this-mode' - you should change this.
+(global-set-key (kbd "C-<f2>") 'multi-occur-in-this-mode)

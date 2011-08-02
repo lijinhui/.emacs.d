@@ -41,8 +41,8 @@
 (setq x-select-enable-clipboard t) ;支持emacs和外部程序的粘贴
 (setq tab-width 4)
 ;;alt + arrow to switch windows
-;(windmove-default-keybindings 'meta)
-(windmove-default-keybindings 'super)
+(windmove-default-keybindings 'meta)
+;(windmove-default-keybindings 'super)
 
 ;;----------------------------------------------------------------------------
 ;; 默认进入auto-fill模式

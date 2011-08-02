@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+
+import dumbo
+def mapper(key, value):
+    yield value.split(" ")[0], 1
+
+def reducer(key, values):
+    yield key, sum(values)
+
+def ${1:main}():
+    dumbo.run(mapper, reducer, combiner = reducer)
+
+if __name__ == "__main__":
+    $1()

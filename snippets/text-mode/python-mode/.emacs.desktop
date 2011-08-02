@@ -1,0 +1,50 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue May 24 16:13:52 2011
+;; Desktop file format version 206
+;; Emacs version 23.1.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("k e"))
+(setq register-alist nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  nil
+  "python-mode"
+  'dired-mode
+  nil
+  2637
+  '(nil nil)
+  t
+  '("/home/ldap/jinhui.li/.emacs.d/snippets/text-mode/python-mode/")
+  nil)
+
+(desktop-create-buffer 206
+  "/home/ldap/jinhui.li/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(linum-mode yas/minor-mode auto-complete-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/ldap/jinhui.li/org/work.org"
+  "work.org"
+  'org-mode
+  '(yas/minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . chinese-gbk-unix) (truncate-lines . t)))
+

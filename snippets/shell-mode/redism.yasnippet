@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: redism
+# --
+for port in 9095 9097 9099;do for i in {1..16}; do echo -n redis$i:$port " "; redis-cli -h redis$i -p $port info|grep mem|grep -v vm_conf_max_memory|tr '\r\n' ' ';echo;done;echo;do

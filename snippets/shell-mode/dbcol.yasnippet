@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: dbcol
+# --
+mysql -h${1:adgagadev} -u${2:adgaga} -p${3:adgaga} ${4:sogou} -e 'desc ${5:ad_daily_rpt}' | awk -F'\t' '{if(NR>1){print $${6:1}}}' | tr '\n' ',' 
+$0

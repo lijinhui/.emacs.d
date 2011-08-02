@@ -4,6 +4,7 @@
 (add-to-list 'load-path "~/.emacs.d/ropemacs/")
 (add-to-list 'load-path "~/.emacs.d/Pymacs-0.23/")
 (require 'python)
+(require 'python-mode)
 (setq ipython-command "~/software/ipython/ipython.py")
 (setq py-python-command-args '("-pylab" "--colors" "Linux"))
 (add-to-list 'load-path "~/software/ipython/docs/emacs/")
@@ -134,6 +135,7 @@
    (kill-process "*Pymacs*")
    (pymacs-load "ropemacs" "rope-")
    )
+
 
 (defvar ac-ropemacs-loaded nil)
 (defun ac-ropemacs-require ()

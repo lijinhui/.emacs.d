@@ -9,6 +9,8 @@
   (gtags-mode 1)
   (hs-minor-mode 1)
   (highlight-symbol-mode 1)
+  (setq indent-tabs-mode nil)
+  (whitespace-mode 1)
   )
 (add-hook 'cc-mode-hook 'my-c++-hook)
 

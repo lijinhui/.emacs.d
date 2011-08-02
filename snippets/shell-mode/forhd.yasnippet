@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: forhd
+# --
+for s in \$(hdls ${1:/sogou/stat/user_attr/20110531}/part-* | awk '{print \$NF}'); do echo $s; $0  done;

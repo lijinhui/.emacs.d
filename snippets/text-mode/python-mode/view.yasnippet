@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: view
+# --
+
+'/$1', '$1',
+class ${1:classname}:
+    def GET(self):
+        template = ENV.get_template("$1.html")
+        user_data = web.input(${2: args})
+        $0
+        return template.render({'msg' : '',
+                           }
+                          )
+    def POST(self):
+        return self.GET()
+

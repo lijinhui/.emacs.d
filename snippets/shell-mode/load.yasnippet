@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: load
+# --
+mysql -h${1:adgagadev} -u${2:adgaga} -p${3:adgaga} --default-character-set=${4:utf8} ${5:sogou} -e "LOAD DATA local INFILE '${6:fp}' ignore INTO TABLE ${7:kw_meta} CHARACTER SET ${8:utf8} FIELDS TERMINATED BY '${9:|}' (${10:kw})"

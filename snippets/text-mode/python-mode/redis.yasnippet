@@ -1,0 +1,25 @@
+# -*- mode: snippet -*-
+# name: redis
+# --
+import redis
+
+gflags.DEFINE_string('${1:}redis_host', '${2:redis1}', '$1 redis host for lctr value')
+gflags.DEFINE_integer('${3:}redis_port', ${5:9097}, '$3 redis port')
+gflags.DEFINE_integer('${6:}redis_ttl', ${7:172800}, '$6 redis default expiration time in second')
+gflags.DEFINE_integer('${8:}redis_db', ${8:3}, 'redis db')
+
+
+def init_redis(pipe = True):
+    client = redis.Redis(host = FLAGS.redis_host, port = FLAGS.redis_port, db = FLAGS.redis_db)
+    try:
+        if not pipe:
+            return client
+
+        if client.ping():
+            return client.pipeline()
+
+    except Exception, e:
+        print ("Redis at %s:%d is not active" % (host, port))
+
+
+$0

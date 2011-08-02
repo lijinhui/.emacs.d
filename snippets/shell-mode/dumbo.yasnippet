@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: dumbo
+# --
+hadoop fs -rmr ${1:test_output};dumbo start ${2:day_xxid_data_2_db.py} -hadoop /usr/lib/hadoop -libjar feathers.jar  -priority HIGH  -memlimit 800M  -input ${3:/sogou/upload/20110705/0000.dat}   -nummaptasks ${4:20} -numreducetasks ${5:2000} -cmdenv '${6:OUTPUT_OBJ=True}'  -hadoopconf pool.name=production   -name '${7:jobname}' -output $1

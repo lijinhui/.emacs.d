@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: build
+# --
+cd ~/adgaga/deploy; ff=$(ls -l /space/adgaga/deploy/packages/$1-latest.tar.gz | awk '{print $NF}');rm /space/adgaga/deploy/packages/$ff; python build.py --modules ${1:sogouxml_server} ${2:--ignore_local_changes}; ff2=$(ls -l /space/adgaga/deploy/packages/$1-latest.tar.gz | awk '{print $NF}');cp -f /space/adgaga/deploy/packages/$ff2 packages/$ff2; echo sudo python deploy.py --package packages/$ff2

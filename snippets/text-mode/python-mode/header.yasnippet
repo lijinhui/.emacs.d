@@ -1,13 +1,13 @@
 # -*- mode: snippet -*-
 # name: header
 # --
+#!/usr/bin/env python
 # -*- coding: ${1:utf-8} -*-
-from jcnmining.settings import semdb
 import re
 import sys
 import os
 import time
 import itertools
 import gflags
-from jcnmining.helpers.jpylib import logger
-from jcnmining.helpers.jpylib import jinit
+
+FLAGS = gflags.FLAGS

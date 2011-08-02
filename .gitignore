@@ -3,3 +3,6 @@
 *.pyc
 *.pyo
 Pymacs-0.23/*
+*.o
+*.po
+global/*/*

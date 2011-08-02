@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: db
+# --
+
+def initdb(dbhost, dbuser, dbpass, dbname, charset = "utf8"):
+    db=MySQLdb.connect(host = dbhost, user = dbuser, passwd = dbpass, db = dbname, charset = charset)
+    return db
+
+def query_db(con, sql, ret_dict = True):
+    cur = con.cursor()
+    cur.execute("set names utf8;")
+    cur.execute(sql)
+    ks = list((k[0] for k in cur.description))
+    if ret_dict:
+        return [dict(zip(ks, r)) for r in cur.fetchall()]
+    else:
+        return cur.fetchall()
+
+dev_db = initdb("adgagadev", "adgaga", "adgaga", "sogou", "utf8")

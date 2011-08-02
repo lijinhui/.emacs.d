@@ -12,8 +12,8 @@
 
 (require 'color-theme)
 ;;(require 'color-theme-autoloads)
-(color-theme-initialize)
-(color-theme-dark-blue2)
+;;(color-theme-initialize)
+;;(color-theme-dark-blue2)
 (if window-system
     (color-theme-deep-blue)
 )

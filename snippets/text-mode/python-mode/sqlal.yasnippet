@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: sqlal
+# --
+from sqlalchemy import *
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+gflags.DEFINE_string('dbhost', 'db2', 'reporting mysql host')
+gflags.DEFINE_string('dbuser', 'adgaga', 'reporting mysql user')
+gflags.DEFINE_string('dbpass', 'adgaga', 'reporting mysql password')
+gflags.DEFINE_string('dbname', 'adgaga', 'reporting mysql dbname')
+
+
+def initdb(dbhost, dbuser, dbpass, dbname):
+    connstr = 'mysql://%s:%s@%s/%s?charset=utf8' % (dbuser, dbpass, dbhost, dbname)
+    mysqldb = create_engine(connstr, echo = False)
+    metadata = MetaData(mysqldb)
+    Session = sessionmaker(bind = mysqldb)
+    session = Session()
+    return session
+
+adgaga_db = initdb(FLAGS.dbhost, FLAGS.dbuser, FLAGS.dbpass, FLAGS.dbname)

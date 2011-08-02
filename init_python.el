@@ -65,7 +65,7 @@
   (setq whitespace-line-column 100)
   (whitespace-mode t)
 
-  (flymake-mode t)
+  ;;(flymake-mode t)
 
   (define-key py-mode-map (kbd "<f7>") 'my-add-break-for-ipython-pdb)
 
@@ -166,3 +166,5 @@ it)"
       (switch-to-buffer-other-window buf))
     )
 )
+
+
