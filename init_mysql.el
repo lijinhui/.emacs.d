@@ -1,9 +1,5 @@
 (setq my-db-servers '(
-                      ("adgaga1" :host "db1" :user "adgaga" :password "adgaga" :db "adgaga")
-                      ("adgaga2" :host "db2" :user "adgaga" :password "adgaga" :db "adgaga")
-                      ("stat1"   :host "db1" :user "stat"   :password "stat"   :db "stat")
-                      ("stat2"   :host "db2" :user "stat"   :password "stat"   :db "stat")
-                      ("sogou"   :host "adgagadev"  :user "adgaga" :password "adgaga" :db "sogou")
+                      
                       
                       ))
 
